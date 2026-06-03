@@ -38,8 +38,8 @@ nav a:hover { color: #ff9800; }
   align-items: center;
   background: #fff;
   color: #0a0808;
-  padding-top: 120px;
-  padding-bottom: 50px;
+  padding-top: 140px; /* MODIFICADO: Más espacio superior por el header fijo */
+  padding-bottom: 70px; /* MODIFICADO: Más espacio al final de la sección */
 }
 
 .hero-container {
@@ -59,20 +59,19 @@ nav a:hover { color: #ff9800; }
 }
 
 .hero-text h1 {
-  font-size: 1.7rem;
-  margin-bottom: 1rem;
-  text-align: center;
+  margin-bottom: 2.5rem; /* MODIFICADO: Más espacio debajo del título principal */
 }
 
 .hero-text p {
-  margin-bottom: 15px;
+  max-width: 700px; 
+  margin: 0 auto 25px auto; /* MODIFICADO: Incrementado el margen inferior entre párrafos */
   line-height: 1.6;
-  text-align: left;
+  text-align: left; 
 }
 
 .hero-text .btn {
   align-self: center;
-  margin-top: 1rem;
+  margin-top: 2rem; /* MODIFICADO: Más separación para el botón */
 }
 
 .hero-image {
@@ -90,19 +89,18 @@ nav a:hover { color: #ff9800; }
   background-color: #f0f0f0;
   color: #333;
   text-align: center;
-  padding: 5rem 2rem;
+  padding: 6rem 2rem; /* MODIFICADO: Más padding vertical en la sección */
 }
 
 #about h2 {
-  text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem; /* MODIFICADO: Mayor separación del título "Sobre mí" */
 }
 
 #about .about-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 30px; /* MODIFICADO: Más espacio entre la foto y los elementos */
 }
 
 #about img {
@@ -115,61 +113,64 @@ nav a:hover { color: #ff9800; }
 #projects {
   background-color: #f5f5f5;
   color: #333;
-  padding: 5rem 2rem;
+  padding: 6rem 2rem; /* MODIFICADO: Más separación general de la sección */
 }
 
 #projects h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 1.7rem;
+  margin-bottom: 3.5rem; /* MODIFICADO: Más espacio debajo del título principal "Proyectos" */
 }
 
 /* Apilar los proyectos verticalmente */
 .projects-grid {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3.5rem; /* MODIFICADO: Más separación entre una tarjeta de proyecto y la siguiente */
 }
 
 .project-card {
   background: #fff;
   border-radius: 15px;
-  padding: 1.5rem;
-  text-align: left;
+  padding: 2.5rem; /* MODIFICADO: Más aire interno dentro de cada tarjeta */
+  text-align: center; 
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-
 .project-card img {
   width: 100%;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem; /* MODIFICADO: Más espacio debajo de la imagen del proyecto */
 }
 
 .project-card h3 {
-  font-size: 1.4rem;
-  margin: 1rem 0 0.5rem 0;
+  margin: 0 0 1.8rem 0; /* MODIFICADO: Más separación debajo del nombre del proyecto (H3) */
   color: #222;
 }
 
 .project-card h4 {
-  font-size: 1.1rem;
-  margin: 0.8rem 0 0.5rem 0;
+  margin: 3rem 0 1.5rem 0; /* MODIFICADO: Mucho más espacio arriba (separa del texto anterior) y abajo (separa de la lista) */
   color: #080808;
 }
 
 .project-card p, 
 .project-card ul, 
 .project-card ol {
+  max-width: 700px;
+  margin: 0 auto 2rem auto; /* MODIFICADO: Mayor separación al final de cada bloque de texto o lista */
   font-size: 0.95rem;
-  margin-bottom: 0.8rem;
   color: #555;
+  text-align: left; 
+}
+
+.project-card ul, 
+.project-card ol {
+  list-style-position: outside; 
+  padding-left: 20px; 
 }
 
 .project-card ul li,
 .project-card ol li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem; /* MODIFICADO: Frases de las listas un poco más separadas entre sí */
   line-height: 1.4;
 }
 
@@ -177,21 +178,21 @@ nav a:hover { color: #ff9800; }
 .screenshots-vertical {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* más espacio entre capturas */
-  max-width: 1250px; /* ancho máximo del contenedor */
-  margin: 0 auto; /* centrado horizontal */
+  gap: 2.5rem; /* MODIFICADO: Más espacio entre las capturas de pantalla */
+  max-width: 1250px;
+  margin: 2rem auto; /* MODIFICADO: Añadido margen superior e inferior al bloque de capturas */
 }
 
 .screenshots-vertical .screenshot {
-  width: 100%; /* ocupan todo el ancho del contenedor */
-  height: auto; /* mantiene proporción */
+  width: 100%;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15); /* sombra más visible */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 /* Botones de links dentro del proyecto */
 .project-links {
-  margin-top: 1rem;
+  margin-top: 2.5rem; /* MODIFICADO: Más separación antes del botón de GitHub */
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
@@ -200,7 +201,7 @@ nav a:hover { color: #ff9800; }
 
 .project-links .btn-link {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 10px 22px; /* MODIFICADO: Botón ligeramente más grande para equilibrar el diseño */
   font-size: 0.9rem;
   font-weight: 600;
   color: #fff;
@@ -222,13 +223,11 @@ nav a:hover { color: #ff9800; }
 #skills {
   background-color: #f9f9f9;
   color: #333;
-  padding: 5rem 2rem;
+  padding: 6rem 2rem; /* MODIFICADO: Más padding de sección */
 }
 
 #skills h2 {
-  text-align: center;
-  font-size: 1.7rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem; /* MODIFICADO: Mayor separación antes de las tarjetas de habilidades */
   font-weight: 700;
   color: #222;
 }
@@ -236,7 +235,7 @@ nav a:hover { color: #ff9800; }
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem; /* MODIFICADO: Más separación entre las tarjetas de habilidades */
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -244,7 +243,7 @@ nav a:hover { color: #ff9800; }
 .skill-card {
   background: #fff;
   border-radius: 12px;
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 1.5rem; /* MODIFICADO: Más espacio interno superior e inferior */
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -256,8 +255,7 @@ nav a:hover { color: #ff9800; }
 }
 
 .skill-card h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  margin-bottom: 1rem; /* MODIFICADO: Más espacio bajo el título de la habilidad */
   color: #0260ad;
 }
 
@@ -265,32 +263,32 @@ nav a:hover { color: #ff9800; }
   font-size: 0.95rem;
   color: #555;
   line-height: 1.4;
+  margin: 0 auto;
 }
 
 /* Contacto */
 #contact {
   background-color: #f5f5f5;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem; /* MODIFICADO: Más espacio vertical */
   text-align: center;
 }
 
 #contact h2 {
-  font-size: 1.7rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem; /* MODIFICADO: Más espacio bajo el título de contacto */
   color: #101314;
 }
 
 .contact-info {
   display: inline-block;
-  text-align: left;
+  text-align: left; 
   background-color: #fff;
-  padding: 2rem 3rem;
+  padding: 2.5rem 3.5rem; /* MODIFICADO: Tarjeta de contacto más espaciosa */
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .contact-item {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem; /* MODIFICADO: Más separación entre cada dato de contacto */
   font-size: 1.1rem;
 }
 
@@ -315,7 +313,7 @@ footer {
   background-color: #222;
   color: #fff;
   text-align: center;
-  padding: 2rem;
+  padding: 2.5rem; /* MODIFICADO: Un poco más de altura al footer */
 }
 
 .socials a {
@@ -329,6 +327,9 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+  #hero { padding-top: 120px; padding-bottom: 40px; }
+  #about, #projects, #skills { padding: 4rem 1.5rem; }
+  
   .hero-container {
     flex-direction: column;
     text-align: center;
@@ -345,6 +346,7 @@ footer {
 
   .projects-grid {
     flex-direction: column;
+    gap: 2.5rem;
   }
 
   #about img {
@@ -353,24 +355,19 @@ footer {
 
   .screenshots-vertical {
     max-width: 100%;
+    gap: 1.5rem;
   }
 
   .project-card {
-    padding: 1rem 0.8rem;
-  }
-
-  .project-card h3 {
-    font-size: 1.2rem;
-  }
-
- .project-card h4 {
-    font-size: 1rem;
+    padding: 1.5rem 1rem;
   }
 
   .project-card p,
   .project-card ul,
   .project-card ol {
     font-size: 0.9rem;
+    max-width: 100%; 
+    margin-bottom: 1.5rem;
   }
 
   .project-links .btn-link {
@@ -424,14 +421,25 @@ footer {
 /* Recuadro del hero */
 .hero-box {
   background-color: #fff;
-  padding: 2rem 2.5rem;
+  padding: 2.5rem 3rem; /* MODIFICADO: Más padding interno en la caja del hero */
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   border: 1px solid #ddd;
   max-width: 900px;
   margin: 0 auto;
 }
+
+/* ESTILOS GLOBALES PARA TÍTULOS */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  font-size: 1.7rem; 
+}
+
+/* Ajuste de tamaño de títulos para móviles */
+@media (max-width: 768px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.4rem; 
+    margin-bottom: 2rem !important; /* Fuerza a que en móviles los títulos mantengan una separación sana */
+  }
 }

@@ -6,103 +6,85 @@
   <title>Portfolio - Carlos Tarre Villanueva</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
-  <!-- Header -->
+
   <header>
     <div class="logo">
-  <img src="images/fotoperfilcarlos.jpg" alt="Foto de perfil de Carlos Tarré Villanueva" class="logo-img">
- 
-</div>
-
+      <img src="images/fotoperfilcarlos.jpg" alt="Foto de perfil de Carlos Tarré Villanueva" class="logo-img">
+    </div>
     <nav>
       <a href="#hero">Inicio</a>
-      <a href="#about">Sobre mí</a>
       <a href="#projects">Proyectos</a>
       <a href="#skills">Habilidades</a>
       <a href="#contact">Contacto</a>
     </nav>
   </header>
 
-  <!-- Hero -->
-<section id="hero">
-  <div class="hero-container">
-    <div class="hero-text hero-box">
-      <h1>Sobre mí</h1>
-      
-      <p>Me llamo Carlos Tarré Villanueva, <strong>Técnico en Desarrollo de Aplicaciones Web</strong> con experiencia en <strong>programación, bases de datos</strong> y entornos tanto del lado del cliente como del servidor. Destaco por desarrollar <strong>aplicaciones bien estructuradas</strong>, aplicando <strong>buenas prácticas</strong> y <strong>metodologías ágiles</strong> para garantizar calidad y mantenibilidad.</p>
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-text hero-box">
+        <h1>Sobre mí</h1>
+        
+        <p>Me llamo Carlos Tarré Villanueva, <strong>Técnico en Desarrollo de Aplicaciones Web</strong> con experiencia en <strong>programación, bases de datos</strong> y entornos tanto del lado del cliente como del servidor. Destaco por desarrollar <strong>aplicaciones bien estructuradas</strong>, aplicando <strong>buenas prácticas</strong> y <strong>metodologías ágiles</strong> para garantizar calidad y mantenibilidad.</p>
 
-      <p>Conocimientos en <strong>HTML, CSS, JavaScript, Java, Python y MySQL</strong>, además de experiencia en frameworks y herramientas como <strong>React, Bootstrap, Laravel y Git</strong>. Manejo con soltura <strong>Windows y Linux</strong>, y entornos de desarrollo como <strong>Visual Studio Code</strong>.</p>
+        <p>Conocimientos en <strong>HTML, CSS, JavaScript, Java, Python y MySQL</strong>, además de experiencia en frameworks y herramientas como <strong>React, Bootstrap, Laravel y Git</strong>. Manejo con soltura <strong>Windows y Linux</strong>, y entornos de desarrollo como <strong>Visual Studio Code</strong>.</p>
 
-      <p>Me caracterizo por el <strong>compromiso, la responsabilidad y la atención al detalle</strong>. La <strong>capacidad de trabajo en equipo</strong>, la <strong>comunicación efectiva</strong> y la <strong>resolución de problemas</strong> me permiten integrarme con facilidad en proyectos colaborativos y afrontar nuevos retos con una actitud <strong>proactiva</strong>.</p>
+        <p>Me caracterizo por el <strong>compromiso, la responsabilidad y la atención al detalle</strong>. La <strong>capacidad de trabajo en equipo</strong>, la <strong>comunicación efectiva</strong> y la <strong>resolución de problemas</strong> me permiten integrarme con facilidad en proyectos colaborativos y afrontar nuevos retos con una actitud <strong>proactiva</strong>.</p>
 
-      <p>El objetivo es seguir creciendo como <strong>desarrollador web</strong>, creando <strong>soluciones innovadoras y de alto impacto</strong> que contribuyan al éxito de cada iniciativa en la que participo.</p>
+        <p>El objetivo es seguir creciendo como <strong>desarrollador web</strong>, creando <strong>soluciones innovadoras y de alto impacto</strong> que contribuyan al éxito de cada iniciativa en la que participo.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <section id="projects">
+    <h2>Proyectos</h2>
+    <div class="projects-grid">
 
+      <div class="project-card">
+        <h3>Página Web Nike</h3>
+        <p>Sitio web inspirado en la marca <strong>Nike</strong>, desarrollado como práctica de <strong>frontend</strong> y <strong>backend</strong> completo. Incluye un diseño moderno, secciones interactivas y un <strong>sistema responsivo</strong> que se adapta a diferentes dispositivos. Además, cuenta con funcionalidades de usuario y administrador, carrito de compras y gestión de pedidos.</p>
 
+        <h4>Roles y funcionalidades</h4>
+        <ul>
+          <li><strong>Usuario:</strong> navegar productos, añadir al carrito, proceder a la compra, ver historial de pedidos.</li>
+          <li><strong>Administrador:</strong> añadir, editar y eliminar productos, ver pedidos de todos los usuarios.</li>
+          <li><strong>Autenticación:</strong> registro, login y control de roles con JWT.</li>
+          <li><strong>Carrito:</strong> sincronización entre frontend y backend, actualización de cantidades, eliminación de productos.</li>
+          <li><strong>Pedidos:</strong> creación de órdenes, seguimiento del estado y vaciado del carrito tras la compra.</li>
+          <li><strong>Perfil:</strong> edición de información personal y gestión de pedidos.</li>
+        </ul>
 
+        <h4>Tecnologías utilizadas</h4>
+        <ul>
+          <li><strong>HTML5</strong> → estructura semántica del sitio</li>
+          <li><strong>CSS3</strong> → estilos modernos, responsive design y animaciones</li>
+          <li><strong>JavaScript (ES6+)</strong> → interactividad en el frontend</li>
+          <li><strong>Angular</strong> → desarrollo de componentes reutilizables y SPA</li>
+          <li><strong>Node.js & npm</strong> → entorno de ejecución y gestión de dependencias</li>
+          <li><strong>Express.js</strong> → configuración del backend y API REST</li>
+          <li><strong>MySQL</strong> → gestión de base de datos y almacenamiento de usuarios/productos/pedidos</li>
+          <li><strong>Git & GitHub</strong> → control de versiones y repositorio</li>
+          <li><strong>Cypress</strong> → pruebas end-to-end para verificar funcionalidades</li>
+        </ul>
 
-
-  <!-- Proyectos -->
-<section id="projects">
-  <h2>Proyectos</h2>
-  <div class="projects-grid">
-
-<!-- Proyecto 1: Página web Nike -->
-<div class="project-card">
-
-  <h3>Página Web Nike</h3>
-  <p>Sitio web inspirado en la marca <strong>Nike</strong>, desarrollado como práctica de <strong>frontend</strong> y <strong>backend</strong> completo. 
-     Incluye un diseño moderno, secciones interactivas y un <strong>sistema responsivo</strong> que se adapta a diferentes dispositivos. 
-     Además, cuenta con funcionalidades de usuario y administrador, carrito de compras y gestión de pedidos.</p>
-
-  <h4>Roles y funcionalidades</h4>
-  <ul>
-    <li><strong>Usuario:</strong> navegar productos, añadir al carrito, proceder a la compra, ver historial de pedidos.</li>
-    <li><strong>Administrador:</strong> añadir, editar y eliminar productos, ver pedidos de todos los usuarios.</li>
-    <li><strong>Autenticación:</strong> registro, login y control de roles con JWT.</li>
-    <li><strong>Carrito:</strong> sincronización entre frontend y backend, actualización de cantidades, eliminación de productos.</li>
-    <li><strong>Pedidos:</strong> creación de órdenes, seguimiento del estado y vaciado del carrito tras la compra.</li>
-    <li><strong>Perfil:</strong> edición de información personal y gestión de pedidos.</li>
-  </ul>
-
-  <h4>Tecnologías utilizadas</h4>
-  <ul>
-    <li><strong>HTML5</strong> → estructura semántica del sitio</li>
-    <li><strong>CSS3</strong> → estilos modernos, responsive design y animaciones</li>
-    <li><strong>JavaScript (ES6+)</strong> → interactividad en el frontend</li>
-    <li><strong>Angular</strong> → desarrollo de componentes reutilizables y SPA</li>
-    <li><strong>Node.js & npm</strong> → entorno de ejecución y gestión de dependencias</li>
-    <li><strong>Express.js</strong> → configuración del backend y API REST</li>
-    <li><strong>MySQL</strong> → gestión de base de datos y almacenamiento de usuarios/productos/pedidos</li>
-    <li><strong>Git & GitHub</strong> → control de versiones y repositorio</li>
-    <li><strong>Cypress</strong> → pruebas end-to-end para verificar funcionalidades</li>
-  </ul>
-
-  <h4>Cómo ejecutar el proyecto</h4>
-<ol>
-  <li><strong>Clonar el repositorio:</strong> <code>git clone https://github.com/Carlostarre/NikeCypress.git</code></li>
-  
-  <li><strong>Instalar dependencias:</strong>
-    <ul>
-      <li>Frontend (Angular - carpeta <code>pixar-web</code>): <code>npm install</code> y <code>npm install -g @angular/cli</code> si no tienes Angular CLI.</li>
-      <li>Backend (Node.js - carpeta <code>backend</code>): <code>npm install</code></li>
-    </ul>
-  </li>
-  
-  <li><strong>Configurar base de datos MySQL:</strong>
-    <ul>
-      <li>Abrir XAMPP y asegurarse de que MySQL esté iniciado.</li>
-      <li>Crear la base de datos: <code>CREATE DATABASE nike_store;</code></li>
-      <li>Crear las tablas correspondientes ejecutando el script SQL incluido en el proyecto:</li>
-      <pre>
+        <h4>Cómo ejecutar el proyecto</h4>
+        <ol>
+          <li><strong>Clonar el repositorio:</strong> <code>git clone https://github.com/Carlostarre/NikeCypress.git</code></li>
+          <li><strong>Instalar dependencias:</strong>
+            <ul>
+              <li>Frontend (Angular - carpeta <code>pixar-web</code>): <code>npm install</code> y <code>npm install -g @angular/cli</code> si no tienes Angular CLI.</li>
+              <li>Backend (Node.js - carpeta <code>backend</code>): <code>npm install</code></li>
+            </ul>
+          </li>
+          <li><strong>Configurar base de datos MySQL:</strong>
+            <ul>
+              <li>Abrir XAMPP y asegurarse de que MySQL esté iniciado.</li>
+              <li>Crear la base de datos: <code>CREATE DATABASE nike_store;</code></li>
+              <li>Crear las tablas correspondientes ejecutando el script SQL incluido en el proyecto:</li>
+              <pre>
 USE nike_store;
 
--- Tabla de usuarios
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -112,7 +94,6 @@ CREATE TABLE users (
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Tabla de productos
 CREATE TABLE products (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -123,7 +104,6 @@ CREATE TABLE products (
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Tabla carrito
 CREATE TABLE cart (
     id INT AUTO_INCREMENT PRIMARY KEY,
     userId INT NOT NULL,
@@ -132,219 +112,220 @@ CREATE TABLE cart (
     FOREIGN KEY (userId) REFERENCES users(id) ON DELETE CASCADE,
     FOREIGN KEY (productId) REFERENCES products(id) ON DELETE CASCADE
 );
+              </pre>
+            </ul>
+          </li>
+          <li><strong>Iniciar backend:</strong> <code>npm start</code> en la carpeta <code>backend</code>. Servidor disponible en <code>http://localhost:3000</code>.</li>
+          <li><strong>Iniciar frontend:</strong> <code>ng serve</code> en la carpeta <code>pixar-web</code>. Abrir <code>http://localhost:4200</code> en el navegador.</li>
+          <li><strong>Configurar usuario administrador:</strong>
+            <ul>
+              <li>Crear un usuario desde la web.</li>
+              <li>Modificarlo a administrador en la base de datos: <code>UPDATE users SET isAdmin = 1 WHERE email = 'tu-email@example.com';</code></li>
+            </ul>
+          </li>
+        </ol>
 
--- Tabla órdenes
-CREATE TABLE orders (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    userId INT NOT NULL,
-    status VARCHAR(50) DEFAULT 'Pending',
-    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (userId) REFERENCES users(id)
-);
+        <h4>Capturas de pantalla</h4>
+        <div class="screenshots-vertical">
+          <img src="images/Inicio.jpg" alt="Pantalla de inicio" class="screenshot">
+          <img src="images/carrito.png" alt="Vista del carrito" class="screenshot">
+          <img src="images/panel admin.png" alt="Panel admin" class="screenshot">
+        </div>
 
--- Tabla items de órdenes
-CREATE TABLE order_items (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    orderId INT NOT NULL,
-    productId INT NOT NULL,
-    quantity INT DEFAULT 1,
-    FOREIGN KEY (orderId) REFERENCES orders(id) ON DELETE CASCADE,
-    FOREIGN KEY (productId) REFERENCES products(id) ON DELETE CASCADE
-);
-      </pre>
-    </ul>
-  </li>
+        <div class="project-links">
+          <a href="https://github.com/Carlostarre/Nike" target="_blank" class="btn-link">🔗 Ver en GitHub</a>
+        </div>
+      </div>
 
-  <li><strong>Iniciar backend:</strong> <code>npm start</code> en la carpeta <code>backend</code>. Servidor disponible en <code>http://localhost:3000</code>.</li>
-  
-  <li><strong>Iniciar frontend:</strong> <code>ng serve</code> en la carpeta <code>pixar-web</code>. Abrir <code>http://localhost:4200</code> en el navegador.</li>
-  
-  <li><strong>Configurar usuario administrador:</strong>
-    <ul>
-      <li>Crear un usuario desde la web.</li>
-      <li>Modificarlo a administrador en la base de datos MySQL:
-        <code>UPDATE users SET isAdmin = 1 WHERE email = 'tu-email@example.com';</code>
-      </li>
-    </ul>
-  </li>
-</ol>
+      <div class="project-card">
+        <h3>FireplayGames</h3>
+        <p>Plataforma web de <strong>exploración y gestión de videojuegos</strong> con autenticación, favoritos, carrito de juegos y datos del usuario integrados. Presenta un diseño moderno, dinámico y totalmente adaptado a dispositivos móviles, consumiendo datos en tiempo real mediante integraciones externas.</p>
 
-
-<h4>Capturas de pantalla</h4>
-<div class="screenshots-vertical">
-  <img src="images/Inicio.jpg" alt="Pantalla de inicio" class="screenshot">
-  <img src="images/carrito.png" alt="Vista del carrito" class="screenshot">
-  <img src="images/panel admin.png" alt="Panel admin" class="screenshot">
-  <img src="images/historial pedidos.png" alt="Historial de pedidos" class="screenshot">
-  <img src="images/productos.png" alt="Productos disponibles" class="screenshot">
-  <img src="images/funcionalidad admin.png" alt="Funcionalidad admin: añadir/editar productos" class="screenshot">
-  <img src="images/factura.png" alt="Factura generada tras compra" class="screenshot">
-  
-</div>
-
-
-
-  <div class="project-links">
-    <a href="https://github.com/Carlostarre/Nike" target="_blank" class="btn-link">🔗 Ver en GitHub</a>
-  </div>
-</div>
-
-
-
-<!-- Sección para incluir en tu portfolio web -->
-<section id="projects">
-
-<div class="projects-grid">
-
-  <!-- Proyecto: FireplayGames -->
-  <div class="project-card">
-    <h3>🎮 FireplayGames</h3>
-    <p>Plataforma web de <strong>exploración y gestión de videojuegos</strong> con autenticación, favoritos, carrito de juegos y datos del usuario integrados. Diseño moderno, responsive y dinámico, utilizando Firebase y la RAWG API.</p>
-
-    <h4>Funcionalidades principales</h4>
-    <ul>
-      <li><strong>Autenticación:</strong> registro e inicio de sesión con Firebase Auth</li>
-      <li><strong>Catálogo de juegos:</strong> búsqueda avanzada por nombre, género, plataforma o fecha de lanzamiento</li>
-      <li><strong>Favoritos:</strong> marcar juegos favoritos y almacenarlos en Firestore</li>
-      <li><strong>Carrito de juegos:</strong> añadir juegos al carrito y gestionar la selección de manera interactiva</li>
-      <li><strong>Perfil de usuario:</strong> ver y editar información personal, historial de favoritos y carrito</li>
-      <li><strong>Detalles de juegos:</strong> información completa con capturas de pantalla, géneros, plataformas y calificaciones (RAWG API)</li>
-      <li><strong>Responsive:</strong> adaptado a móviles, tablets y escritorio</li>
-    </ul>
-
-    <h4>Tecnologías utilizadas</h4>
-    <ul>
-      <li><strong>Next.js</strong> → framework React con SSR y rutas dinámicas</li>
-      <li><strong>React</strong> → componentes reutilizables e interactividad</li>
-      <li><strong>TypeScript</strong> → tipado estático para mayor seguridad</li>
-      <li><strong>Firebase</strong> → autenticación, Firestore para favoritos y carrito</li>
-      <li><strong>RAWG API</strong> → obtención de datos de videojuegos</li>
-      <li><strong>Tailwind CSS</strong> → diseño moderno y responsive</li>
-      <li><strong>Vite / npm</strong> → build y gestión de dependencias</li>
-      <li><strong>Git & GitHub</strong> → control de versiones y repositorio</li>
-    </ul>
-
-    <h4>Cómo ejecutar el proyecto</h4>
-    <ol>
-      <li><strong>Clonar el repositorio:</strong> <code>git clone https://github.com/TU_USUARIO/FireplayGames.git</code></li>
-      <li><strong>Instalar dependencias:</strong> <code>npm install</code></li>
-      <li><strong>Configurar variables de entorno:</strong> crear <code>.env.local</code> con Firebase y RAWG API</li>
-      <li><strong>Iniciar servidor de desarrollo:</strong> <code>npm run dev</code>. La app estará disponible en <code>http://localhost:3000</code></li>
-      <li><strong>Probar la aplicación:</strong>
+        <h4>Roles y funcionalidades</h4>
         <ul>
-          <li>Registrar un usuario e iniciar sesión</li>
-          <li>Buscar juegos usando el buscador integrado</li>
-          <li>Agregar juegos a favoritos y al carrito</li>
-          <li>Visualizar detalles de los juegos y capturas de pantalla</li>
-          <li>Editar información del perfil</li>
+          <li><strong>Autenticación:</strong> Registro seguro e inicio de sesión de usuarios gestionado de forma nativa con Firebase Auth.</li>
+          <li><strong>Catálogo Dinámico:</strong> Búsqueda avanzada de títulos por nombre, género, plataforma o fechas utilizando la API externa de RAWG.</li>
+          <li><strong>Interactividad completa:</strong> Gestión fluida del almacenamiento de videojuegos favoritos y el carrito de compras dentro de colecciones de base de datos.</li>
+          <li><strong>Perfil de Usuario:</strong> Panel privado para editar la información personal del cliente y visualizar su historial guardado de favoritos.</li>
         </ul>
-      </li>
-    </ol>
 
-    <h4>Características destacadas</h4>
-    <ul>
-      <li>🎨 <strong>Diseño moderno:</strong> interfaz limpia y responsive con Tailwind CSS</li>
-      <li>🔐 <strong>Seguridad:</strong> autenticación Firebase Auth y control de datos del usuario</li>
-      <li>⚡ <strong>Interactividad:</strong> favoritos, carrito y buscador dinámico</li>
-      <li>📱 <strong>Responsive:</strong> optimizado para móviles, tablets y escritorio</li>
-      <li>🧩 <strong>Modular:</strong> componentes React reutilizables y mantenibles</li>
-    </ul>
+        <h4>Tecnologías utilizadas</h4>
+        <ul>
+          <li><strong>Next.js</strong> → Framework de React utilizado para implementar rutas dinámicas y renderizado óptimo</li>
+          <li><strong>React & TypeScript</strong> → Creación de la interfaz mediante componentes reutilizables con tipado estático seguro</li>
+          <li><strong>Firebase & Firestore</strong> → Ecosistema cloud empleado para la autenticación y base de datos NoSQL en tiempo real</li>
+          <li><strong>RAWG API</strong> → Integración de servicios externos para la extracción masiva de datos y capturas de videojuegos</li>
+          <li><strong>Tailwind CSS</strong> → Framework de estilos utilizado para agilizar un diseño responsivo y moderno</li>
+          <li><strong>Git & GitHub</strong> → Herramientas aplicadas para el control de versiones distribuidas del código fuente</li>
+        </ul>
 
-    
+        <h4>Cómo ejecutar el proyecto</h4>
+        <ol>
+          <li><strong>Clonar el repositorio:</strong> <code>git clone https://github.com/Carlostarre/FirebaseGames1.git</code></li>
+          <li><strong>Instalar dependencias:</strong> Inicializar los paquetes necesarios ejecutando <code>npm install</code> in tu consola.</li>
+          <li><strong>Variables de entorno:</strong> Crear un archivo local <code>.env.local</code> con tus credenciales privadas de Firebase y RAWG API.</li>
+          <li><strong>Iniciar servidor local:</strong> Ejecutar el comando de desarrollo <code>npm run dev</code> para levantar la app en <code>http://localhost:3000</code>.</li>
+        </ol>
 
-    <!-- Sección de capturas de pantalla -->
-    <h4>Capturas de pantalla</h4>
-    <div class="screenshots-vertical">
-      <img src="images/registro1.png" alt="Pantalla de registro1" class="screenshot">
-      <img src="images/iniciosesion1.png" alt="Pantalla de login1" class="screenshot">
-      <img src="images/juegos.png" alt="Listado de juegos" class="screenshot">
-      <img src="images/detallesjuego.png" alt="Detalles de un juego" class="screenshot">
-      <img src="images/favoritos.png" alt="Favoritos" class="screenshot">
-      <img src="images/carrito1.png" alt="Carrito1" class="screenshot">
-      <img src="images/micuenta.png" alt="Perfil de usuario" class="screenshot">
-      <img src="images/info.png" alt="Informacion de la app" class="screenshot">
-      <img src="images/info2.png" alt="Informacion de la app 2" class="screenshot">
-      <img src="images/contacto1.png" alt="Informacion de Contacto" class="screenshot">
+        <h4>Capturas de pantalla</h4>
+        <div class="screenshots-vertical">
+          <img src="images/juegos.png" alt="Listado de juegos" class="screenshot">
+          <img src="images/detallesjuego.png" alt="Detalles de un juego" class="screenshot">
+          <img src="images/favoritos.png" alt="Favoritos" class="screenshot">
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/Carlostarre/FirebaseGames1" target="_blank" class="btn-link">🔗 Ver en GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Ticket Booking API Pro</h3>
+        <p>Robusta API RESTful diseñada para la gestión de eventos y venta de entradas en entornos de alta concurrencia. Este proyecto simula el comportamiento del motor central de una plataforma de gran envergadura estilo <strong>Ticketmaster</strong>, implementando las mejores prácticas de la industria backend moderno y un panel de control interactivo para la gestión de datos.</p>
+
+        <h4>Roles y funcionalidades</h4>
+        <ul>
+          <li><strong>Usuario (USER):</strong> Registro público automático, navegación de eventos disponibles y compra segura de entradas con control de protección ante sobreventas.</li>
+          <li><strong>Administrador (ADMIN):</strong> Acceso completo a los endpoints protegidos con privilegios de gestión mediante cuenta semilla o elevación de privilegios en BD.</li>
+          <li><strong>Control de Concurrencia:</strong> Control estricto de transacciones SQL para garantizar que las compras simultáneas en milisegundos no alteren el stock real.</li>
+          <li><strong>Rendimiento Optimizado:</strong> Implementación de caché en memoria y paginación inteligente para manejar consultas masivas de manera eficiente.</li>
+          <li><strong>Procesos Asíncronos:</strong> Envío automatizado de correos electrónicos en segundo plano, maximizando la velocidad de respuesta del servidor.</li>
+          <li><strong>Seguridad y Validación:</strong> Autenticación JWT por roles, protección frente a ataques de Mass Assignment y validación estricta de datos mediante DTOs.</li>
+        </ul>
+
+        <h4>Tecnologías utilizadas</h4>
+        <ul>
+          <li><strong>Java 17 & Spring Boot 3</strong> → Desarrollo del core del backend, lógica de negocio y arquitectura RESTful</li>
+          <li><strong>PostgreSQL</strong> → Base de datos relacional robusta elegida para la persistencia del sistema en producción</li>
+          <li><strong>Spring Security & JWT</strong> → Filtros de seguridad, encriptación BCrypt y gestión de sesiones basadas en tokens</li>
+          <li><strong>Flyway</strong> → Control de versiones y ejecución automatizada de migraciones de la base de datos</li>
+          <li><strong>Docker & Docker Compose</strong> → Virtualización y despliegue unificado de contenedores para BD y API</li>
+          <li><strong>React, Vite & Tailwind CSS v4</strong> → Frontend opcional para interactuar visualmente con la API mediante peticiones Axios</li>
+          <li><strong>JUnit 5, Mockito & MockMvc</strong> → Pruebas automatizadas unitarias y de integración para asegurar la robustez del código</li>
+          <li><strong>Swagger / OpenAPI 3.0</strong> → Documentación interactiva y accesible de todos los endpoints de la API</li>
+          <li><strong>GitHub Actions</strong> → Automatización de flujos de trabajo e Integración Continuas (CI/CD)</li>
+        </ul>
+
+        <h4>Cómo ejecutar el proyecto</h4>
+        <ol>
+          <li><strong>Clonar el repositorio:</strong> <code>git clone https://github.com/carlostarvil/ticketapi.git</code> y acceder al directorio usando <code>cd ticketapi</code>.</li>
+          <li><strong>Empaquetar la aplicación:</strong> Generar el archivo ejecutable compilando el entorno mediante el comando <code>./mvnw clean package -DskipTests</code>.</li>
+          <li><strong>Levantar la infraestructura (Docker):</strong> Iniciar el ecosistema completo ejecutando <code>docker compose up -d --build</code>. Esto descargará la imagen de PostgreSQL, ejecutará las migraciones de Flyway y desplegará la API en el puerto <strong>8081</strong>.</li>
+          <li><strong>Acceder a la documentación:</strong> Una vez levantado el entorno, puedes interactuar de forma interactiva con los endpoints en la URL: <code>http://localhost:8081/swagger-ui/index.html</code>.</li>
+          <li><strong>Configurar privilegios de Administrador:</strong>
+            <ul>
+              <li><strong>Vía Rápida:</strong> Iniciar sesión en Swagger utilizando la cuenta preconfigurada de pruebas (Usuario: <code>admin@ticketstore.com</code> / Contraseña: <code>admin123</code>).</li>
+              <li><strong>Vía Manual (Consola Docker):</strong> Si registras un usuario público y necesitas elevarlo a ADMIN desde tu terminal, accede al contenedor ejecutando:
+                <pre>
+-- 1. Acceder a PostgreSQL dentro del contenedor activo:
+docker exec -it &lt;nombre_del_contenedor&gt; psql -U &lt;tu_usuario_de_db&gt; -d &lt;nombre_de_tu_db&gt;
+
+-- 2. Modificar el rol del usuario directamente en las tablas:
+UPDATE usuarios SET role = 'ADMIN' WHERE username = 'nuevo.cliente@email.com';
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li><strong>Ejecutar el Frontend (Opcional):</strong> 
+            <ul>
+              <li>Moverse a la carpeta correspondiente: <code>cd ticketapi-frontend</code></li>
+              <li>Instalar los paquetes de Node: <code>npm install</code></li>
+              <li>Iniciar el entorno de desarrollo: <code>npm run dev</code>. La aplicación estará lista para usarse en <code>http://localhost:5173</code>.</li>
+            </ul>
+          </li>
+        </ol>
+
+        <h4>Capturas de pantalla</h4>
+        <div class="screenshots-vertical">
+          <img src="images/LoginTicket.png" alt="Vista del panel de control interactivo en React" class="screenshot">
+          <img src="images/AdminTicket.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
+          <img src="images/AdminTicket2.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
+          <img src="images/AdminTicket3.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
+          <img src="images/AdminTicket4.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
+          <img src="images/UsuarioTicket.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
+          <img src="images/Ticketmail.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/carlostarvil/ticketapi" target="_blank" class="btn-link">🔗 Ver en GitHub</a>
+        </div>
+      </div>
+
     </div>
-<div class="project-links">
-      <a href="https://github.com/Carlostarre/FirebaseGames1" target="_blank" class="btn-link">🔗 Ver en GitHub</a>
+  </section>
+
+  <section id="skills">
+    <h2>Habilidades</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <h3>HTML, CSS, JavaScript</h3>
+        <p>Desarrollo de interfaces web modernas, responsivas y accesibles con semántica estricta.</p>
+      </div>
+      <div class="skill-card">
+        <h3>React & Tailwind CSS</h3>
+        <p>Implementación de Single Page Applications (SPA) reactivas, control de estados dinámicos y consumo asíncrono con Axios.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Java & Spring Boot 3</h3>
+        <p>Desarrollo de APIs RESTful robustas, control de concurrencia transaccional, optimización con caché y procesos asíncronos.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Spring Security & JWT</h3>
+        <p>Configuración de arquitecturas seguras, control de accesos basados en roles, filtros de tokens y encriptación con BCrypt.</p>
+      </div>
+      <div class="skill-card">
+        <h3>PostgreSQL, MySQL y Flyway</h3>
+        <p>Modelado de bases de datos relacionales eficientes, consultas SQL complejas y automatización de migraciones de esquemas.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Docker & CI/CD</h3>
+        <p>Contenerización de aplicaciones multicapa con Docker Compose y automatización de pipelines con GitHub Actions.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Testing Automatizado</h3>
+        <p>Garantía de calidad de código mediante pruebas unitarias y de integración utilizando JUnit 5, Mockito y Cypress (E2E).</p>
+      </div>
+      <div class="skill-card">
+        <h3>Python</h3>
+        <p>Desarrollo de scripts, automatización de procesos y arquitecturas lógicas backend eficientes.</p>
+      </div>
+      <div class="skill-card">
+        <h3>PHP y Git</h3>
+        <p>Lógica del lado del servidor y control de versiones distribuido orientado a flujos de trabajo colaborativos.</p>
+      </div>
     </div>
-  </div>
-</div>
-</section>
+  </section>
 
-
-
-
-
-
-  <!-- Habilidades -->
-<!-- Habilidades -->
-<section id="skills">
-  <h2>Habilidades</h2>
-  <div class="skills-container">
-    <div class="skill-card">
-      <h3>HTML, CSS, JavaScript</h3>
-      <p>Desarrollo de interfaces web modernas, responsivas y accesibles.</p>
+  <section id="contact">
+    <h2>Contacto y links</h2>
+    <div class="contact-info">
+      <div class="contact-item">
+        <span class="contact-label">Teléfono:</span>
+        <span class="contact-value">+34 608 07 65 02</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">Email:</span>
+        <span class="contact-value">carlostarrevillanueva0@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">GitHub:</span>
+        <span class="contact-value">
+          <a href="https://github.com/Carlostarvil" target="_blank">Carlostarvil</a> | 
+          <a href="https://github.com/Carlostarre" target="_blank">Carlostarre</a>
+        </span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">LinkedIn:</span>
+        <span class="contact-value">
+          <a href="https://www.linkedin.com/in/carlostarre" target="_blank">Carlos Tarré</a>
+        </span>
+      </div>
     </div>
-    <div class="skill-card">
-      <h3>PHP y MySQL</h3>
-      <p>Desarrollo backend eficiente y gestión de bases de datos estructuradas.</p>
-    </div>
-    <div class="skill-card">
-      <h3>Java</h3>
-      <p>Programación orientada a objetos y aplicaciones escalables y robustas.</p>
-    </div>
-    <div class="skill-card">
-      <h3>React & Frameworks</h3>
-      <p>Implementación de interfaces dinámicas y reutilizables con buenas prácticas.</p>
-    </div>
-    <div class="skill-card">
-      <h3>Git</h3>
-      <p>Control de versiones eficiente y colaboración en proyectos de desarrollo.</p>
-    </div>
-    <div class="skill-card">
-      <h3>Python</h3>
-      <p>Desarrollo de scripts, automatización y aplicaciones backend robustas.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-
-
-  <!-- Contacto -->
-<section id="contact">
-  <h2>Contacto y links</h2>
-  <div class="contact-info">
-    <div class="contact-item">
-      <span class="contact-label">Teléfono:</span>
-      <span class="contact-value">+34 608 07 65 02</span>
-    </div>
-    <div class="contact-item">
-      <span class="contact-label">Email:</span>
-      <span class="contact-value">carlostarrevillanueva0@gmail.com</span>
-    </div>
-    <div class="contact-item">
-      <span class="contact-label">GitHub:</span>
-      <span class="contact-value">
-        <a href="https://github.com/Carlostarvil" target="_blank">Carlostarvil</a> | 
-        <a href="https://github.com/Carlostarre" target="_blank">Carlostarre</a>
-      </span>
-    </div>
-    <div class="contact-item">
-      <span class="contact-label">LinkedIn:</span>
-      <span class="contact-value">
-        <a href="https://www.linkedin.com/in/carlostarre" target="_blank">Carlos Tarré</a>
-      </span>
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Carlos Tarré Villanueva. Todos los derechos reservados.</p>
+    <p>&copy; 2026 Carlos Tarré Villanueva. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>
