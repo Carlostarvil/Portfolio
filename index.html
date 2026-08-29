@@ -41,6 +41,164 @@
     <h2>Proyectos</h2>
     <div class="projects-grid">
 
+      <!-- PROYECTO 1: YEPSY (MOVIDO A PRIMERA POSICIÓN) -->
+      <div class="project-card">
+        <h3>Yepsy - Full-Stack E-Commerce Platform</h3>
+        <p>Plataforma de comercio electrónico inspirada en <strong>Amazon</strong>, diseñada para ofrecer una experiencia de compra fluida y responsiva. Este proyecto Full-Stack incluye gestión de productos, carrito de compras, pasarela de pago simulada, panel de administración, soporte al cliente y sistema de devoluciones, todo ello internacionalizado (Español/Inglés).</p>
+
+        <h4>Roles y funcionalidades</h4>
+        <ul>
+          <li><strong>Usuario (USER):</strong> Explorar productos, gestión de carrito, historial de pedidos y tramitación de garantías.</li>
+          <li><strong>Administrador (ADMIN):</strong> Panel de gestión para productos, tickets de soporte, devoluciones y administración de roles.</li>
+          <li><strong>Responsive Design:</strong> Interfaz fluida que se adapta perfectamente a dispositivos móviles, tablets y escritorio.</li>
+          <li><strong>Internacionalización (i18n):</strong> Soporte multi-idioma (ES/EN) integrado desde el contexto de React.</li>
+          <li><strong>Buscador Inteligente:</strong> Barra de búsqueda predictiva con historial de consultas.</li>
+          <li><strong>Carrito Avanzado:</strong> Validación de stock en tiempo real y persistencia de artículos seleccionados.</li>
+          <li><strong>Atención al Cliente:</strong> Sistema integrado de tickets con envío de notificaciones automáticas vía SMTP.</li>
+        </ul>
+
+        <h4>Tecnologías utilizadas</h4>
+        <ul>
+          <li><strong>React.js & Vite</strong> → Desarrollo de la interfaz de usuario SPA con compilación ultrarrápida</li>
+          <li><strong>React Router DOM & Context API</strong> → Enrutamiento dinámico y gestión de estado global para i18n</li>
+          <li><strong>Axios & Lucide React</strong> → Consumo de API RESTful HTTP e iconografía vectorial fluida</li>
+          <li><strong>Java 21 & Spring Boot 3</strong> → Construcción del backend del ecosistema y control de la lógica de negocio</li>
+          <li><strong>Spring Data JPA & Hibernate</strong> → Mapeo objeto-relacional (ORM) y persistencia fluida de datos</li>
+          <li><strong>PostgreSQL 15</strong> → Base de datos relacional robusta elegida para producción</li>
+          <li><strong>Docker & Docker Compose</strong> → Orquestación de contenedores e infraestructura unificada (API + PostgreSQL)</li>
+          <li><strong>Maven</strong> → Herramienta utilizada para la gestión de dependencias y construcción del proyecto backend</li>
+        </ul>
+
+        <h4>Cómo ejecutar el proyecto</h4>
+        <ol>
+          <li><strong>Clonar el repositorio:</strong> <code>git clone https://github.com/Carlostarvil/yepsy.git</code></li>
+          <li><strong>Backend y Base de Datos (Docker):</strong>
+            <ul>
+              <li>Abrir una terminal en la carpeta raíz del proyecto y acceder a la carpeta: <code>cd .\amazon\</code></li>
+              <li>Levantar la infraestructura ejecutando: <code>docker-compose up -d --build</code> (descargará imágenes, compilará Java e iniciará PostgreSQL en el puerto 5433).</li>
+            </ul>
+          </li>
+          <li><strong>Frontend (NPM):</strong>
+            <ul>
+              <li>Abrir una nueva terminal y dirigirse a la carpeta correspondiente: <code>cd .\amazon-frontend\</code></li>
+              <li>Instalar los paquetes necesarios: <code>npm install</code></li>
+              <li>Iniciar el servidor de desarrollo local: <code>npm run dev</code> (disponible en <code>http://localhost:5173</code>).</li>
+            </ul>
+          </li>
+          <li><strong>Gestión e Inicialización de Base de Datos:</strong>
+            <ul>
+              <li>Para crear un usuario administrador inicial, conéctate a la BD (puerto 5433, usuario: postgres, clave: 12345) y ejecuta:</li>
+              <pre>
+INSERT INTO users (email, password, name, role) 
+VALUES ('admin@yepsy.com', '1234', 'admin', 'ADMIN');
+              </pre>
+            </ul>
+          </li>
+        </ol>
+
+        <h4>Capturas de pantalla</h4>
+        <div class="screenshots-vertical">
+          <img src="images/admininicio (2).png" alt="Inicio de administración" class="screenshot">
+          <img src="images/adminajustes.png" alt="Ajustes de administración" class="screenshot">
+          <img src="images/adminañadirproducto.png" alt="Añadir producto desde administración" class="screenshot">
+          <img src="images/admindevoluciones.png" alt="Gestión de devoluciones administración" class="screenshot">
+          <img src="images/adminsoporte.png" alt="Soporte de administración" class="screenshot">
+          <img src="images/adminusers.png" alt="Gestión de usuarios" class="screenshot">
+
+          <img src="images/Registro2.png" alt="Pantalla de registro" class="screenshot">
+
+          <img src="images/login3.png" alt="Pantalla de inicio de sesión" class="screenshot">
+
+          <img src="images/recuperarcontra.png" alt="Pantalla de recuperar contraseña" class="screenshot">
+
+          <img src="images/ajusteslupauser.png" alt="Ajustes y búsqueda de usuario" class="screenshot">
+          <img src="images/detallesproducto.png" alt="Detalles del producto" class="screenshot">
+          <img src="images/productouser.png" alt="Vista de producto para usuario" class="screenshot">
+          <img src="images/listacarritouser.png" alt="Lista del carrito de usuario" class="screenshot">
+          <img src="images/devolucionesuser.png" alt="Devoluciones de usuario" class="screenshot">
+          <img src="images/devolucionesuser 2.png" alt="Devoluciones de usuario vista 2" class="screenshot">
+          <img src="images/soporteuser.png" alt="Soporte de usuario" class="screenshot">
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/Carlostarvil/yepsy" target="_blank" class="btn-link">🔗 Ver en GitHub</a>
+        </div>
+      </div>
+
+      <!-- PROYECTO 2: TICKET BOOKING API PRO (SE MANTIENE EN SEGUNDA POSICIÓN) -->
+      <div class="project-card">
+        <h3>Ticket Booking API Pro</h3>
+        <p>Robusta API RESTful diseñada para la gestión de eventos y venta de entradas en entornos de alta concurrencia. Este proyecto simula el comportamiento del motor central de una plataforma de gran envergadura estilo <strong>Ticketmaster</strong>, implementando las mejores prácticas de la industria backend moderno y un panel de control interactivo para la gestión de datos.</p>
+
+        <h4>Roles y funcionalidades</h4>
+        <ul>
+          <li><strong>Usuario (USER):</strong> Registro público automático, navegación de eventos disponibles y compra segura de entradas con control de protección ante sobreventas.</li>
+          <li><strong>Administrador (ADMIN):</strong> Acceso completo a los endpoints protegidos con privilegios de gestión mediante cuenta semilla o elevación de privilegios en BD.</li>
+          <li><strong>Control de Concurrencia:</strong> Control estricto de transacciones SQL para garantizar que las compras simultáneas en milisegundos no alteren el stock real.</li>
+          <li><strong>Rendimiento Optimizado:</strong> Implementación de caché en memoria y paginación inteligente para manejar consultas masivas de manera eficiente.</li>
+          <li><strong>Procesos Asíncronos:</strong> Envío automatizado de correos electrónicos en segundo plano, maximizando la velocidad de respuesta del servidor.</li>
+          <li><strong>Seguridad y Validación:</strong> Autenticación JWT por roles, protección frente a ataques de Mass Assignment y validación estricta de datos mediante DTOs.</li>
+        </ul>
+
+        <h4>Tecnologías utilizadas</h4>
+        <ul>
+          <li><strong>Java 17 & Spring Boot 3</strong> → Desarrollo del core del backend, lógica de negocio y arquitectura RESTful</li>
+          <li><strong>PostgreSQL</strong> → Base de datos relacional robusta elegida para la persistencia del sistema en producción</li>
+          <li><strong>Spring Security & JWT</strong> → Filtros de seguridad, encriptación BCrypt y gestión de sesiones basadas en tokens</li>
+          <li><strong>Flyway</strong> → Control de versiones y ejecución automatizada de migraciones de la base de datos</li>
+          <li><strong>Docker & Docker Compose</strong> → Virtualización y despliegue unificado de contenedores para BD y API</li>
+          <li><strong>React, Vite & Tailwind CSS v4</strong> → Frontend opcional para interactuar visualmente con la API mediante peticiones Axios</li>
+          <li><strong>JUnit 5, Mockito & MockMvc</strong> → Pruebas automatizadas unitarias y de integración para asegurar la robustez del código</li>
+          <li><strong>Swagger / OpenAPI 3.0</strong> → Documentación interactiva y accesible de todos los endpoints de la API</li>
+          <li><strong>GitHub Actions</strong> → Automatización de flujos de trabajo e Integración Continuas (CI/CD)</li>
+        </ul>
+
+        <h4>Cómo ejecutar el proyecto</h4>
+        <ol>
+          <li><strong>Clonar el repositorio:</strong> <code>git clone https://github.com/carlostarvil/ticketapi.git</code> y acceder al directorio usando <code>cd ticketapi</code>.</li>
+          <li><strong>Empaquetar la aplicación:</strong> Generar el archivo ejecutable compilando el entorno mediante el comando <code>./mvnw clean package -DskipTests</code>.</li>
+          <li><strong>Levantar la infraestructura (Docker):</strong> Iniciar el ecosistema completo ejecutando <code>docker compose up -d --build</code>. Esto descargará la imagen de PostgreSQL, ejecutará las migraciones de Flyway y desplegará la API en el puerto <strong>8081</strong>.</li>
+          <li><strong>Acceder a la documentación:</strong> Una vez levantado el entorno, puedes interactuar de forma interactiva con los endpoints en la URL: <code>http://localhost:8081/swagger-ui/index.html</code>.</li>
+          <li><strong>Configurar privilegios de Administrador:</strong>
+            <ul>
+              <li><strong>Vía Rápida:</strong> Iniciar sesión en Swagger utilizando la cuenta preconfigurada de pruebas (Usuario: <code>admin@ticketstore.com</code> / Contraseña: <code>admin123</code>).</li>
+              <li><strong>Vía Manual (Consola Docker):</strong> Si registras un usuario público y necesitas elevarlo a ADMIN desde tu terminal, accede al contenedor ejecutando:
+                <pre>
+-- 1. Acceder a PostgreSQL dentro del contenedor activo:
+docker exec -it &lt;nombre_del_contenedor&gt; psql -U &lt;tu_usuario_de_db&gt; -d &lt;nombre_de_tu_db&gt;
+
+-- 2. Modificar el rol del usuario directamente en las tablas:
+UPDATE usuarios SET role = 'ADMIN' WHERE username = 'nuevo.cliente@email.com';
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li><strong>Ejecutar el Frontend (Opcional):</strong> 
+            <ul>
+              <li>Moverse a la carpeta correspondiente: <code>cd ticketapi-frontend</code></li>
+              <li>Instalar los paquetes de Node: <code>npm install</code></li>
+              <li>Iniciar el entorno de desarrollo: <code>npm run dev</code>. La aplicación estará lista para usarse en <code>http://localhost:5173</code>.</li>
+            </ul>
+          </li>
+        </ol>
+
+        <h4>Capturas de pantalla</h4>
+        <div class="screenshots-vertical">
+          <img src="images/LoginTicket.png" alt="Vista del panel de control interactivo en React" class="screenshot">
+          <img src="images/AdminTicket.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
+          <img src="images/AdminTicket2.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
+          <img src="images/AdminTicket3.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
+          <img src="images/AdminTicket4.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
+          <img src="images/UsuarioTicket.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
+          <img src="images/Ticketmail.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/Carlostarvil/TicketStore" target="_blank" class="btn-link">🔗 Ver en GitHub</a>
+        </div>
+      </div>
+
+      <!-- PROYECTO 3: PÁGINA WEB NIKE (REUBICADO A TERCERA POSICIÓN) -->
       <div class="project-card">
         <h3>Página Web Nike</h3>
         <p>Sitio web inspirado en la marca <strong>Nike</strong>, desarrollado como práctica de <strong>frontend</strong> y <strong>backend</strong> completo. Incluye un diseño moderno, secciones interactivas y un <strong>sistema responsivo</strong> que se adapta a diferentes dispositivos. Además, cuenta con funcionalidades de usuario y administrador, carrito de compras y gestión de pedidos.</p>
@@ -137,6 +295,7 @@ CREATE TABLE cart (
         </div>
       </div>
 
+      <!-- PROYECTO 4: FIREPLAYGAMES (REUBICADO A CUARTA POSICIÓN) -->
       <div class="project-card">
         <h3>FireplayGames</h3>
         <p>Plataforma web de <strong>exploración y gestión de videojuegos</strong> con autenticación, favoritos, carrito de juegos y datos del usuario integrados. Presenta un diseño moderno, dinámico y totalmente adaptado a dispositivos móviles, consumiendo datos en tiempo real mediante integraciones externas.</p>
@@ -176,78 +335,6 @@ CREATE TABLE cart (
 
         <div class="project-links">
           <a href="https://github.com/Carlostarre/FirebaseGames1" target="_blank" class="btn-link">🔗 Ver en GitHub</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h3>Ticket Booking API Pro</h3>
-        <p>Robusta API RESTful diseñada para la gestión de eventos y venta de entradas en entornos de alta concurrencia. Este proyecto simula el comportamiento del motor central de una plataforma de gran envergadura estilo <strong>Ticketmaster</strong>, implementando las mejores prácticas de la industria backend moderno y un panel de control interactivo para la gestión de datos.</p>
-
-        <h4>Roles y funcionalidades</h4>
-        <ul>
-          <li><strong>Usuario (USER):</strong> Registro público automático, navegación de eventos disponibles y compra segura de entradas con control de protección ante sobreventas.</li>
-          <li><strong>Administrador (ADMIN):</strong> Acceso completo a los endpoints protegidos con privilegios de gestión mediante cuenta semilla o elevación de privilegios en BD.</li>
-          <li><strong>Control de Concurrencia:</strong> Control estricto de transacciones SQL para garantizar que las compras simultáneas en milisegundos no alteren el stock real.</li>
-          <li><strong>Rendimiento Optimizado:</strong> Implementación de caché en memoria y paginación inteligente para manejar consultas masivas de manera eficiente.</li>
-          <li><strong>Procesos Asíncronos:</strong> Envío automatizado de correos electrónicos en segundo plano, maximizando la velocidad de respuesta del servidor.</li>
-          <li><strong>Seguridad y Validación:</strong> Autenticación JWT por roles, protección frente a ataques de Mass Assignment y validación estricta de datos mediante DTOs.</li>
-        </ul>
-
-        <h4>Tecnologías utilizadas</h4>
-        <ul>
-          <li><strong>Java 17 & Spring Boot 3</strong> → Desarrollo del core del backend, lógica de negocio y arquitectura RESTful</li>
-          <li><strong>PostgreSQL</strong> → Base de datos relacional robusta elegida para la persistencia del sistema en producción</li>
-          <li><strong>Spring Security & JWT</strong> → Filtros de seguridad, encriptación BCrypt y gestión de sesiones basadas en tokens</li>
-          <li><strong>Flyway</strong> → Control de versiones y ejecución automatizada de migraciones de la base de datos</li>
-          <li><strong>Docker & Docker Compose</strong> → Virtualización y despliegue unificado de contenedores para BD y API</li>
-          <li><strong>React, Vite & Tailwind CSS v4</strong> → Frontend opcional para interactuar visualmente con la API mediante peticiones Axios</li>
-          <li><strong>JUnit 5, Mockito & MockMvc</strong> → Pruebas automatizadas unitarias y de integración para asegurar la robustez del código</li>
-          <li><strong>Swagger / OpenAPI 3.0</strong> → Documentación interactiva y accesible de todos los endpoints de la API</li>
-          <li><strong>GitHub Actions</strong> → Automatización de flujos de trabajo e Integración Continuas (CI/CD)</li>
-        </ul>
-
-        <h4>Cómo ejecutar el proyecto</h4>
-        <ol>
-          <li><strong>Clonar el repositorio:</strong> <code>git clone https://github.com/carlostarvil/ticketapi.git</code> y acceder al directorio usando <code>cd ticketapi</code>.</li>
-          <li><strong>Empaquetar la aplicación:</strong> Generar el archivo ejecutable compilando el entorno mediante el comando <code>./mvnw clean package -DskipTests</code>.</li>
-          <li><strong>Levantar la infraestructura (Docker):</strong> Iniciar el ecosistema completo ejecutando <code>docker compose up -d --build</code>. Esto descargará la imagen de PostgreSQL, ejecutará las migraciones de Flyway y desplegará la API en el puerto <strong>8081</strong>.</li>
-          <li><strong>Acceder a la documentación:</strong> Una vez levantado el entorno, puedes interactuar de forma interactiva con los endpoints en la URL: <code>http://localhost:8081/swagger-ui/index.html</code>.</li>
-          <li><strong>Configurar privilegios de Administrador:</strong>
-            <ul>
-              <li><strong>Vía Rápida:</strong> Iniciar sesión en Swagger utilizando la cuenta preconfigurada de pruebas (Usuario: <code>admin@ticketstore.com</code> / Contraseña: <code>admin123</code>).</li>
-              <li><strong>Vía Manual (Consola Docker):</strong> Si registras un usuario público y necesitas elevarlo a ADMIN desde tu terminal, accede al contenedor ejecutando:
-                <pre>
--- 1. Acceder a PostgreSQL dentro del contenedor activo:
-docker exec -it &lt;nombre_del_contenedor&gt; psql -U &lt;tu_usuario_de_db&gt; -d &lt;nombre_de_tu_db&gt;
-
--- 2. Modificar el rol del usuario directamente en las tablas:
-UPDATE usuarios SET role = 'ADMIN' WHERE username = 'nuevo.cliente@email.com';
-                </pre>
-              </li>
-            </ul>
-          </li>
-          <li><strong>Ejecutar el Frontend (Opcional):</strong> 
-            <ul>
-              <li>Moverse a la carpeta correspondiente: <code>cd ticketapi-frontend</code></li>
-              <li>Instalar los paquetes de Node: <code>npm install</code></li>
-              <li>Iniciar el entorno de desarrollo: <code>npm run dev</code>. La aplicación estará lista para usarse en <code>http://localhost:5173</code>.</li>
-            </ul>
-          </li>
-        </ol>
-
-        <h4>Capturas de pantalla</h4>
-        <div class="screenshots-vertical">
-          <img src="images/LoginTicket.png" alt="Vista del panel de control interactivo en React" class="screenshot">
-          <img src="images/AdminTicket.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
-          <img src="images/AdminTicket2.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
-          <img src="images/AdminTicket3.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
-          <img src="images/AdminTicket4.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
-          <img src="images/UsuarioTicket.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
-          <img src="images/Ticketmail.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
-        </div>
-
-        <div class="project-links">
-          <a href="https://github.com/Carlostarvil/TicketStore" target="_blank" class="btn-link">🔗 Ver en GitHub</a>
         </div>
       </div>
 
