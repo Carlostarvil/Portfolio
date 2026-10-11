@@ -1086,7 +1086,8 @@ a:focus-visible {
   align-items: center;
 }
 .portrait-card {
-  max-width: 350px;
+  max-width: 180px;
+  justify-self: center;
   border-radius: 9px;
   overflow: hidden;
   border: 1px solid #40463b;
@@ -2409,8 +2410,8 @@ a:focus-visible {
     gap: 34px;
   }
   .portrait-card {
-    width: 75%;
-    max-width: 310px;
+    width: 100%;
+    max-width: 140px;
     margin: auto;
   }
   .portrait-card > img {
