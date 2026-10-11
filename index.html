@@ -1,418 +1,936 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Carlos Tarre Villanueva</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#131615" />
+    <meta
+      name="description"
+      content="Carlos Tarré Villanueva, desarrollador web con foco en backend. Explora NexBite, Yepsy y otros proyectos con React, Node.js, Java y PostgreSQL."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Carlos Tarré — Desarrollo web con visión de producto"
+    />
+    <meta
+      property="og:description"
+      content="Del código al producto. Proyectos, decisiones técnicas y desarrollo full stack."
+    />
+    <meta
+      property="og:url"
+      content="https://carlostarvil.github.io/Portfolio/"
+    />
+    <meta
+      property="og:image"
+      content="https://carlostarvil.github.io/Portfolio/assets/projects/nexbite-home.jpg"
+    />
+    <title>Carlos Tarré — Desarrollador web</title>
+    <link rel="canonical" href="https://carlostarvil.github.io/Portfolio/" />
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/fonts/dm-sans-latin-variable.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <svg
+      class="icon-definitions"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M5 19 19 5M5 5h14v14" />
+      </symbol>
+      <symbol id="i-right" viewBox="0 0 24 24">
+        <path d="M4 12h16m-6-6 6 6-6 6" />
+      </symbol>
+      <symbol id="i-down" viewBox="0 0 24 24">
+        <path d="M12 4v16m-6-6 6 6 6-6" />
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 24">
+        <path d="m6 6 12 12M6 18 18 6" />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="3" />
+        <path d="m3 7 9 6 9-6" />
+      </symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24">
+        <rect x="8" y="8" width="12" height="12" rx="2" />
+        <path d="M16 8V4H4v12h4" />
+      </symbol>
+      <symbol id="i-code" viewBox="0 0 24 24">
+        <path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-17-2 20" />
+      </symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24">
+        <path d="M4 8h16M4 16h16" />
+      </symbol>
+      <symbol id="i-zoom" viewBox="0 0 24 24">
+        <path d="M3 9V3h6m6 0h6v6m0 6v6h-6m-6 0H3v-6" />
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6" />
+      </symbol>
+    </svg>
 
-  <header>
-    <div class="logo">
-      <img src="images/fotoperfilcarlos.jpg" alt="Foto de perfil de Carlos Tarré Villanueva" class="logo-img">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#hero" aria-label="Carlos Tarré, inicio"
+          ><span class="brand-mark">ct<span>.</span></span
+          ><span class="brand-name"
+            >Carlos Tarré<br /><small>Desarrollador web</small></span
+          ></a
+        >
+        <button
+          class="menu-toggle js-only icon-button"
+          type="button"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+        >
+          <svg class="icon"><use href="#i-menu" /></svg>
+        </button>
+        <nav
+          id="primary-nav"
+          class="primary-nav"
+          aria-label="Navegación principal"
+        >
+          <a href="#projects">Proyectos</a><a href="#about">Sobre mí</a
+          ><a href="#skills">Tecnologías</a>
+          <a href="#contact" class="nav-contact"
+            >Hablemos <svg class="icon"><use href="#i-arrow" /></svg
+          ></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container" id="hero" aria-labelledby="hero-title">
+        <div class="hero-main">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="status-dot"></span> CARLOS TARRÉ VILLANUEVA
+            </p>
+            <h1 id="hero-title">
+              Del código<br />al
+              <span class="accent-word"
+                >producto<svg viewBox="0 0 500 22" aria-hidden="true">
+                  <path d="M3 13Q240 1 495 13" /></svg></span
+              ><span class="accent">.</span>
+            </h1>
+            <p class="hero-description">
+              Desarrollador web con foco en backend.<br />Construyo aplicaciones
+              completas, conectando una buena interfaz con la lógica que la hace
+              funcionar.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="button button-accent"
+                >Explorar proyectos
+                <svg class="icon"><use href="#i-down" /></svg
+              ></a>
+              <a
+                href="https://github.com/Carlostarvil"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link"
+                >Mi GitHub <svg class="icon"><use href="#i-arrow" /></svg
+              ></a>
+            </div>
+            <div class="hero-note">
+              <span class="note-line"></span>Técnico en Desarrollo de
+              Aplicaciones Web
+            </div>
+          </div>
+          <div class="hero-visual">
+            <svg class="hero-orbit" viewBox="0 0 600 600" aria-hidden="true">
+              <g fill="none" stroke="currentColor">
+                <circle cx="300" cy="300" r="260" />
+                <ellipse
+                  cx="300"
+                  cy="300"
+                  rx="260"
+                  ry="105"
+                  transform="rotate(-38 300 300)"
+                />
+                <ellipse
+                  cx="300"
+                  cy="300"
+                  rx="260"
+                  ry="170"
+                  transform="rotate(-38 300 300)"
+                />
+                <ellipse
+                  cx="300"
+                  cy="300"
+                  rx="105"
+                  ry="260"
+                  transform="rotate(-38 300 300)"
+                />
+                <path d="M77 166 523 434M136 509 464 91" />
+              </g>
+            </svg>
+            <span class="visual-coordinate mono">PRODUCTO / 001</span>
+            <a
+              class="hero-window"
+              href="#project-nexbite"
+              aria-label="Descubrir NexBite, mi proyecto destacado"
+            >
+              <div class="window-toolbar">
+                <span class="window-dots"><i></i><i></i><i></i></span
+                ><span>NexBite</span
+                ><svg class="icon"><use href="#i-arrow" /></svg>
+              </div>
+              <img
+                src="assets/projects/nexbite-home.jpg"
+                alt="Interfaz de NexBite: categorías de comida y locales recomendados"
+                width="1440"
+                height="1040"
+                fetchpriority="high"
+              />
+            </a>
+            <div class="visual-label">
+              <span class="label-mark">N<span>↗</span></span>
+              <div>
+                <strong>NexBite</strong><span>De la ubicación al pedido.</span>
+              </div>
+              <span class="label-number mono">01</span>
+            </div>
+            <div class="stack-note mono">
+              <span class="status-dot"></span> REACT + GRAPHQL + POSTGRESQL
+            </div>
+          </div>
+        </div>
+        <div class="hero-bottom mono">
+          <span>DISEÑO. LÓGICA. PRODUCTO.</span
+          ><span class="hero-bottom-stack">REACT / NODE.JS / JAVA</span
+          ><a href="#projects"
+            >SCROLL PARA EXPLORAR <svg class="icon"><use href="#i-down" /></svg
+          ></a>
+        </div>
+      </section>
+
+      <section
+        class="projects-section section container"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-top">
+          <p class="eyebrow">
+            <span class="section-number">01</span> PROYECTOS SELECCIONADOS
+          </p>
+          <span class="section-aside mono"
+            >DEL CONCEPTO A LA IMPLEMENTACIÓN</span
+          >
+        </div>
+        <div class="section-heading">
+          <h2 id="projects-title">
+            Ideas que ya<br /><span class="muted">tienen forma.</span>
+          </h2>
+          <p>
+            Productos propios y proyectos de aprendizaje.<br />La mejor manera
+            de conocer cómo trabajo.
+          </p>
+        </div>
+
+        <article class="featured-project reveal" id="project-nexbite">
+          <div class="featured-copy">
+            <div class="project-kicker">
+              <span class="featured-badge"
+                ><span class="status-dot"></span> PROYECTO DESTACADO</span
+              ><span class="project-state">En desarrollo</span>
+            </div>
+            <h3>NexBite<span>.</span></h3>
+            <p class="featured-description">
+              Los locales de tu zona.<br />Tu próximo pedido, más cerca.
+            </p>
+            <p class="featured-summary">
+              Una plataforma de pedidos a domicilio y recogida. Une
+              descubrimiento por ubicación, catálogo, pagos y un espacio propio
+              para los vendedores.
+            </p>
+            <div class="featured-capabilities">
+              <span>Ubicación y cobertura</span><span>Pagos con Stripe</span
+              ><span>Panel del vendedor</span>
+            </div>
+            <ul class="tags tags-light" aria-label="Tecnologías de NexBite">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>GraphQL</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <div class="project-actions">
+              <button
+                class="button button-dark js-only"
+                type="button"
+                data-project="nexbite"
+              >
+                Explorar proyecto
+                <svg class="icon"><use href="#i-arrow" /></svg>
+              </button>
+              <a
+                class="text-link"
+                href="https://github.com/Carlostarvil/Nexbite/tree/chatgpt-dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver código <svg class="icon"><use href="#i-code" /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="featured-media">
+            <div class="featured-media-top mono">
+              <span>EXPERIENCIA DEL CLIENTE</span><span>WEB APP ↗</span>
+            </div>
+            <button
+              class="featured-screen js-only"
+              type="button"
+              data-project="nexbite"
+              aria-label="Ver las capturas y detalles de NexBite"
+            >
+              <img
+                src="assets/projects/nexbite-home.jpg"
+                alt="Pantalla del cliente de NexBite con categorías y recomendaciones de locales"
+                width="1440"
+                height="1040"
+                loading="lazy"
+              />
+            </button>
+            <noscript
+              ><img
+                class="featured-screen"
+                src="assets/projects/nexbite-home.jpg"
+                alt="Interfaz del cliente de NexBite"
+                width="1440"
+                height="1040"
+                loading="lazy"
+            /></noscript>
+            <div class="featured-media-bottom">
+              <span class="mini-mark">N<span>.</span></span
+              ><span
+                >Cliente + vendedor<br /><strong
+                  >Una misma plataforma.</strong
+                ></span
+              ><svg class="icon"><use href="#i-arrow" /></svg>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-list-top">
+          <h3>Más proyectos</h3>
+          <div
+            class="project-filters js-only"
+            role="group"
+            aria-label="Filtrar otros proyectos"
+          >
+            <button type="button" data-filter="all" aria-pressed="true">
+              Todos</button
+            ><button type="button" data-filter="fullstack" aria-pressed="false">
+              Full stack</button
+            ><button type="button" data-filter="backend" aria-pressed="false">
+              Backend
+            </button>
+          </div>
+        </div>
+        <p id="filter-status" class="sr-only" aria-live="polite"></p>
+        <div class="projects-grid">
+          <article
+            class="project-card reveal"
+            data-category="fullstack"
+            id="project-yepsy"
+          >
+            <div class="project-cover cover-yepsy">
+              <span class="cover-index mono">02 / COMERCIO ELECTRÓNICO</span>
+              <div class="yepsy-cover-art" aria-hidden="true">
+                <span class="yepsy-wordmark">Yepsy<span>↗</span></span>
+                <div class="shopping-art">
+                  <svg viewBox="0 0 160 180">
+                    <path d="M38 55h84l12 107H26L38 55Z" fill="#ffa947" />
+                    <path
+                      d="M55 67V40a25 25 0 0 1 50 0v27"
+                      fill="none"
+                      stroke="#242821"
+                      stroke-width="8"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="m65 110 12 12 25-26"
+                      fill="none"
+                      stroke="#242821"
+                      stroke-width="8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                  ><span class="shopping-tag">ES / EN</span>
+                </div>
+              </div>
+              <span class="cover-caption"
+                >Un comercio. Toda la experiencia.</span
+              >
+            </div>
+            <div class="project-card-body">
+              <div class="project-heading-row">
+                <h3>Yepsy</h3>
+                <span class="project-type mono">FULL STACK</span>
+              </div>
+              <p>
+                Comercio electrónico con catálogo, carrito, administración,
+                soporte y gestión de devoluciones.
+              </p>
+              <ul class="tags" aria-label="Tecnologías de Yepsy">
+                <li>React</li>
+                <li>Spring Boot</li>
+                <li>PostgreSQL</li>
+                <li>Docker</li>
+              </ul>
+              <div class="project-card-footer">
+                <button
+                  type="button"
+                  class="text-link js-only"
+                  data-project="yepsy"
+                >
+                  Explorar proyecto
+                  <svg class="icon"><use href="#i-arrow" /></svg></button
+                ><a
+                  class="icon-button"
+                  href="https://github.com/Carlostarvil/Yepsy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver código de Yepsy en GitHub"
+                  ><svg class="icon"><use href="#i-code" /></svg
+                ></a>
+              </div>
+            </div>
+          </article>
+          <article
+            class="project-card reveal"
+            data-category="backend"
+            id="project-ticket"
+          >
+            <div class="project-cover cover-ticket">
+              <span class="cover-index mono">03 / RESERVAS Y EVENTOS</span>
+              <div class="ticket-cover-art" aria-hidden="true">
+                <div class="ticket-stub">
+                  <div class="ticket-stub-top">
+                    <span>ADMITE UNA PERSONA</span
+                    ><svg class="icon"><use href="#i-arrow" /></svg>
+                  </div>
+                  <strong>Ticket<br />Booking.</strong>
+                  <div class="ticket-stub-bottom">
+                    <span>API / JAVA / SPRING</span
+                    ><span class="barcode"></span>
+                  </div>
+                </div>
+                <span class="ticket-side-note mono"
+                  >DESDE LA API<br />HASTA LA ENTRADA.</span
+                >
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-heading-row">
+                <h3>Ticket Booking API</h3>
+                <span class="project-type mono">BACKEND</span>
+              </div>
+              <p>
+                Gestión de eventos y venta de entradas con transacciones,
+                autenticación por roles y pruebas automatizadas.
+              </p>
+              <ul class="tags" aria-label="Tecnologías de Ticket Booking API">
+                <li>Java</li>
+                <li>Spring Security</li>
+                <li>Flyway</li>
+                <li>JUnit</li>
+              </ul>
+              <div class="project-card-footer">
+                <button
+                  type="button"
+                  class="text-link js-only"
+                  data-project="ticket"
+                >
+                  Explorar proyecto
+                  <svg class="icon"><use href="#i-arrow" /></svg></button
+                ><a
+                  class="icon-button"
+                  href="https://github.com/Carlostarvil/TicketStore"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver código de Ticket Booking API en GitHub"
+                  ><svg class="icon"><use href="#i-code" /></svg
+                ></a>
+              </div>
+            </div>
+          </article>
+          <article
+            class="project-card reveal"
+            data-category="fullstack"
+            id="project-nike"
+          >
+            <div class="project-cover cover-nike">
+              <span class="cover-index mono">04 / TIENDA ONLINE</span>
+              <div class="cover-browser">
+                <div class="cover-browser-bar">
+                  <span class="window-dots"><i></i><i></i><i></i></span
+                  ><span>Proyecto Nike</span>
+                </div>
+                <img
+                  src="images/Inicio.jpg"
+                  width="1877"
+                  height="857"
+                  alt="Captura de la tienda Nike: portada y navegación del catálogo"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-heading-row">
+                <h3>Nike Store</h3>
+                <span class="project-type mono">FULL STACK</span>
+              </div>
+              <p>
+                Proyecto de aprendizaje: tienda inspirada en Nike, con usuarios,
+                carrito, pedidos y panel de administración.
+              </p>
+              <ul class="tags" aria-label="Tecnologías de Nike Store">
+                <li>Angular</li>
+                <li>Express</li>
+                <li>MySQL</li>
+                <li>Cypress</li>
+              </ul>
+              <div class="project-card-footer">
+                <button
+                  type="button"
+                  class="text-link js-only"
+                  data-project="nike"
+                >
+                  Explorar proyecto
+                  <svg class="icon"><use href="#i-arrow" /></svg></button
+                ><a
+                  class="icon-button"
+                  href="https://github.com/Carlostarre/Nike"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver código de Nike Store en GitHub"
+                  ><svg class="icon"><use href="#i-code" /></svg
+                ></a>
+              </div>
+            </div>
+          </article>
+          <article
+            class="project-card reveal"
+            data-category="fullstack"
+            id="project-fireplay"
+          >
+            <div class="project-cover cover-fireplay">
+              <span class="cover-index mono">05 / CATÁLOGO DE VIDEOJUEGOS</span>
+              <div class="cover-browser">
+                <div class="cover-browser-bar">
+                  <span class="window-dots"><i></i><i></i><i></i></span
+                  ><span>FireplayGames</span>
+                </div>
+                <img
+                  src="images/juegos.png"
+                  width="1555"
+                  height="805"
+                  alt="Captura de FireplayGames con el catálogo de videojuegos"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-heading-row">
+                <h3>FireplayGames</h3>
+                <span class="project-type mono">FULL STACK</span>
+              </div>
+              <p>
+                Exploración de videojuegos con búsqueda, favoritos y cuentas de
+                usuario, conectada a Firebase y RAWG.
+              </p>
+              <ul class="tags" aria-label="Tecnologías de FireplayGames">
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>Firebase</li>
+                <li>Tailwind CSS</li>
+              </ul>
+              <div class="project-card-footer">
+                <button
+                  type="button"
+                  class="text-link js-only"
+                  data-project="fireplay"
+                >
+                  Explorar proyecto
+                  <svg class="icon"><use href="#i-arrow" /></svg></button
+                ><a
+                  class="icon-button"
+                  href="https://github.com/Carlostarre/FirebaseGames1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver código de FireplayGames en GitHub"
+                  ><svg class="icon"><use href="#i-code" /></svg
+                ></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="about-section section container"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="section-top">
+          <p class="eyebrow"><span class="section-number">02</span> SOBRE MÍ</p>
+          <span class="section-aside mono">LA PERSONA DETRÁS DEL CÓDIGO</span>
+        </div>
+        <div class="about-grid">
+          <div class="portrait-card reveal">
+            <img
+              src="images/fotoperfilcarlos.jpg"
+              width="1408"
+              height="1791"
+              alt="Retrato de Carlos Tarré Villanueva"
+              loading="lazy"
+            />
+            <div class="portrait-caption">
+              <span>Carlos Tarré</span
+              ><span class="mono">DESARROLLADOR WEB ↗</span>
+            </div>
+          </div>
+          <div class="about-copy reveal">
+            <h2 id="about-title">
+              Pienso en el producto.<br /><span class="muted"
+                >Cuido el código.</span
+              >
+            </h2>
+            <p>
+              Soy Carlos, Técnico en Desarrollo de Aplicaciones Web. Me interesa
+              especialmente el backend: cómo se organiza la información, cómo se
+              conectan los servicios y qué ocurre cuando una aplicación crece.
+            </p>
+            <p>
+              Mis proyectos me permiten trabajar en todo el recorrido: desde una
+              interfaz que se entiende hasta las APIs, la base de datos y las
+              reglas de negocio que hay detrás.
+            </p>
+            <p>
+              Busco seguir creciendo como desarrollador, aportar a un equipo y
+              construir aplicaciones que tengan sentido para las personas que
+              las utilizan.
+            </p>
+            <div class="about-signature">
+              <span class="signature-mark">ct.</span
+              ><span
+                >Aprender construyendo.<br /><strong
+                  >Mejorar en cada iteración.</strong
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="approach-grid">
+          <div class="approach-item reveal">
+            <span class="mono">01 / ENTENDER</span>
+            <h3>Primero, el problema.</h3>
+            <p>
+              Usuarios, necesidades y reglas claras antes de entrar en la
+              implementación.
+            </p>
+          </div>
+          <div class="approach-item reveal">
+            <span class="mono">02 / CONSTRUIR</span>
+            <h3>Cada pieza tiene su lugar.</h3>
+            <p>
+              Interfaces, APIs y datos conectados con responsabilidades bien
+              definidas.
+            </p>
+          </div>
+          <div class="approach-item reveal">
+            <span class="mono">03 / COMPROBAR</span>
+            <h3>Probar y seguir mejorando.</h3>
+            <p>
+              Revisar los flujos completos, cuidar los detalles y corregir lo
+              que falla.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="skills-section section container"
+        id="skills"
+        aria-labelledby="skills-title"
+      >
+        <div class="section-top">
+          <p class="eyebrow">
+            <span class="section-number">03</span> TECNOLOGÍAS
+          </p>
+          <span class="section-aside mono"
+            >LAS HERRAMIENTAS, AL SERVICIO DE LA IDEA</span
+          >
+        </div>
+        <div class="section-heading">
+          <h2 id="skills-title">
+            Un stack completo.<br /><span class="muted">Un foco claro.</span>
+          </h2>
+          <p>
+            Mi foco está en el backend.<br />Mi visión abarca toda la
+            aplicación.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-block skill-backend reveal">
+            <span class="skill-label mono">01 / LÓGICA Y SERVICIOS</span>
+            <h3>Backend<span>↗</span></h3>
+            <p>APIs, autenticación, permisos y reglas de negocio.</p>
+            <ul class="skill-tags">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>GraphQL</li>
+              <li>Spring Security</li>
+              <li>JWT</li>
+            </ul>
+          </div>
+          <div class="skill-block reveal">
+            <span class="skill-label mono">02 / EXPERIENCIA DE USUARIO</span>
+            <h3>Frontend<span>↗</span></h3>
+            <p>Interfaces adaptables, componentes y estados.</p>
+            <ul class="skill-tags">
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Angular</li>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
+              <li>HTML & CSS</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+          <div class="skill-block reveal">
+            <span class="skill-label mono">03 / PERSISTENCIA</span>
+            <h3>Datos<span>↗</span></h3>
+            <p>Modelado, consultas y evolución del esquema.</p>
+            <ul class="skill-tags">
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>Firebase</li>
+              <li>Firestore</li>
+              <li>Flyway</li>
+              <li>JPA / Hibernate</li>
+            </ul>
+          </div>
+          <div class="skill-block reveal">
+            <span class="skill-label mono">04 / CALIDAD Y ENTORNO</span>
+            <h3>Herramientas<span>↗</span></h3>
+            <p>Versiones, pruebas y entornos reproducibles.</p>
+            <ul class="skill-tags">
+              <li>Git & GitHub</li>
+              <li>Docker</li>
+              <li>GitHub Actions</li>
+              <li>JUnit / Mockito</li>
+              <li>Cypress</li>
+              <li>Node Test Runner</li>
+              <li>Python</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="contact-section section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="container">
+          <div class="section-top">
+            <p class="eyebrow">
+              <span class="section-number">04</span> CONTACTO
+            </p>
+            <span class="section-aside mono"
+              >UNA CONVERSACIÓN ES UN BUEN COMIENZO</span
+            >
+          </div>
+          <div class="contact-main">
+            <div>
+              <h2 id="contact-title">
+                ¿Construimos<br />algo <span>juntos?</span>
+              </h2>
+              <p>
+                Si tienes un proyecto en mente o buscas sumar un desarrollador a
+                tu equipo, hablemos.
+              </p>
+            </div>
+            <a
+              class="contact-arrow"
+              href="mailto:carlostarrevillanueva0@gmail.com"
+              aria-label="Enviar un correo a Carlos Tarré"
+              ><svg class="icon"><use href="#i-arrow" /></svg
+            ></a>
+          </div>
+          <div class="contact-bottom">
+            <div class="email-group">
+              <span class="mono">ESCRÍBEME</span>
+              <div class="email-row">
+                <a href="mailto:carlostarrevillanueva0@gmail.com"
+                  >carlostarrevillanueva0@gmail.com</a
+                ><button
+                  id="copy-email"
+                  class="icon-button js-only"
+                  type="button"
+                  aria-label="Copiar dirección de correo"
+                >
+                  <svg class="icon"><use href="#i-copy" /></svg>
+                </button>
+              </div>
+              <a class="phone-link" href="tel:+34608076502">+34 608 07 65 02</a>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/carlostarre"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn <svg class="icon"><use href="#i-arrow" /></svg></a
+              ><a
+                href="https://github.com/Carlostarvil"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub <svg class="icon"><use href="#i-arrow" /></svg></a
+              ><a
+                href="https://github.com/Carlostarre"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Otros proyectos <svg class="icon"><use href="#i-arrow" /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <a class="brand-mark" href="#hero" aria-label="Volver al inicio"
+        >ct<span>.</span></a
+      >
+      <p>© <span id="year">2026</span> Carlos Tarré Villanueva</p>
+      <a class="footer-top mono" href="#hero"
+        >VOLVER ARRIBA <svg class="icon"><use href="#i-arrow" /></svg
+      ></a>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden>
+      <svg class="icon"><use href="#i-check" /></svg><span></span>
     </div>
-    <nav>
-      <a href="#hero">Inicio</a>
-      <a href="#projects">Proyectos</a>
-      <a href="#skills">Habilidades</a>
-      <a href="#contact">Contacto</a>
-    </nav>
-  </header>
 
-  <section id="hero">
-    <div class="hero-container">
-      <div class="hero-text hero-box">
-        <h1>Sobre mí</h1>
-        
-        <p>Me llamo Carlos Tarré Villanueva, <strong>Técnico en Desarrollo de Aplicaciones Web</strong> con experiencia en <strong>programación, bases de datos</strong> y entornos tanto del lado del cliente como del servidor. Destaco por desarrollar <strong>aplicaciones bien estructuradas</strong>, aplicando <strong>buenas prácticas</strong> y <strong>metodologías ágiles</strong> para garantizar calidad y mantenibilidad.</p>
-
-        <p>Conocimientos en <strong>HTML, CSS, JavaScript, Java, Python y MySQL</strong>, además de experiencia en frameworks y herramientas como <strong>React, Bootstrap, Laravel y Git</strong>. Manejo con soltura <strong>Windows y Linux</strong>, y entornos de desarrollo como <strong>Visual Studio Code</strong>.</p>
-
-        <p>Me caracterizo por el <strong>compromiso, la responsabilidad y la atención al detalle</strong>. La <strong>capacidad de trabajo en equipo</strong>, la <strong>comunicación efectiva</strong> y la <strong>resolución de problemas</strong> me permiten integrarme con facilidad en proyectos colaborativos y afrontar nuevos retos con una actitud <strong>proactiva</strong>.</p>
-
-        <p>El objetivo es seguir creciendo como <strong>desarrollador web</strong>, creando <strong>soluciones innovadoras y de alto impacto</strong> que contribuyan al éxito de cada iniciativa en la que participo.</p>
+    <dialog
+      class="project-dialog"
+      id="project-dialog"
+      aria-labelledby="project-dialog-title"
+    >
+      <div class="dialog-header">
+        <span class="mono" id="dialog-category">PROYECTO</span
+        ><button
+          class="icon-button"
+          type="button"
+          data-close-dialog
+          aria-label="Cerrar proyecto"
+        >
+          <svg class="icon"><use href="#i-close" /></svg>
+        </button>
       </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Proyectos</h2>
-    <div class="projects-grid">
-
-      <!-- PROYECTO 1: YEPSY (MOVIDO A PRIMERA POSICIÓN) -->
-      <div class="project-card">
-        <h3>Yepsy - Full-Stack E-Commerce Platform</h3>
-        <p>Plataforma de comercio electrónico inspirada en <strong>Amazon</strong>, diseñada para ofrecer una experiencia de compra fluida y responsiva. Este proyecto Full-Stack incluye gestión de productos, carrito de compras, pasarela de pago simulada, panel de administración, soporte al cliente y sistema de devoluciones, todo ello internacionalizado (Español/Inglés).</p>
-
-        <h4>Roles y funcionalidades</h4>
-        <ul>
-          <li><strong>Usuario (USER):</strong> Explorar productos, gestión de carrito, historial de pedidos y tramitación de garantías.</li>
-          <li><strong>Administrador (ADMIN):</strong> Panel de gestión para productos, tickets de soporte, devoluciones y administración de roles.</li>
-          <li><strong>Responsive Design:</strong> Interfaz fluida que se adapta perfectamente a dispositivos móviles, tablets y escritorio.</li>
-          <li><strong>Internacionalización (i18n):</strong> Soporte multi-idioma (ES/EN) integrado desde el contexto de React.</li>
-          <li><strong>Buscador Inteligente:</strong> Barra de búsqueda predictiva con historial de consultas.</li>
-          <li><strong>Carrito Avanzado:</strong> Validación de stock en tiempo real y persistencia de artículos seleccionados.</li>
-          <li><strong>Atención al Cliente:</strong> Sistema integrado de tickets con envío de notificaciones automáticas vía SMTP.</li>
-        </ul>
-
-        <h4>Tecnologías utilizadas</h4>
-        <ul>
-          <li><strong>React.js & Vite</strong> → Desarrollo de la interfaz de usuario SPA con compilación ultrarrápida</li>
-          <li><strong>React Router DOM & Context API</strong> → Enrutamiento dinámico y gestión de estado global para i18n</li>
-          <li><strong>Axios & Lucide React</strong> → Consumo de API RESTful HTTP e iconografía vectorial fluida</li>
-          <li><strong>Java 21 & Spring Boot 3</strong> → Construcción del backend del ecosistema y control de la lógica de negocio</li>
-          <li><strong>Spring Data JPA & Hibernate</strong> → Mapeo objeto-relacional (ORM) y persistencia fluida de datos</li>
-          <li><strong>PostgreSQL 15</strong> → Base de datos relacional robusta elegida para producción</li>
-          <li><strong>Docker & Docker Compose</strong> → Orquestación de contenedores e infraestructura unificada (API + PostgreSQL)</li>
-          <li><strong>Maven</strong> → Herramienta utilizada para la gestión de dependencias y construcción del proyecto backend</li>
-        </ul>
-
-        <h4>Cómo ejecutar el proyecto</h4>
-        <ol>
-          <li><strong>Clonar el repositorio:</strong> <code>git clone https://github.com/Carlostarvil/yepsy.git</code></li>
-          <li><strong>Backend y Base de Datos (Docker):</strong>
-            <ul>
-              <li>Abrir una terminal en la carpeta raíz del proyecto y acceder a la carpeta: <code>cd .\amazon\</code></li>
-              <li>Levantar la infraestructura ejecutando: <code>docker-compose up -d --build</code> (descargará imágenes, compilará Java e iniciará PostgreSQL en el puerto 5433).</li>
-            </ul>
-          </li>
-          <li><strong>Frontend (NPM):</strong>
-            <ul>
-              <li>Abrir una nueva terminal y dirigirse a la carpeta correspondiente: <code>cd .\amazon-frontend\</code></li>
-              <li>Instalar los paquetes necesarios: <code>npm install</code></li>
-              <li>Iniciar el servidor de desarrollo local: <code>npm run dev</code> (disponible en <code>http://localhost:5173</code>).</li>
-            </ul>
-          </li>
-          <li><strong>Gestión e Inicialización de Base de Datos:</strong>
-            <ul>
-              <li>Para crear un usuario administrador inicial, conéctate a la BD (puerto 5433, usuario: postgres, clave: 12345) y ejecuta:</li>
-              <pre>
-INSERT INTO users (email, password, name, role) 
-VALUES ('admin@yepsy.com', '1234', 'admin', 'ADMIN');
-              </pre>
-            </ul>
-          </li>
-        </ol>
-
-        <h4>Capturas de pantalla</h4>
-        <div class="screenshots-vertical">
-          <img src="images/admininicio (2).png" alt="Inicio de administración" class="screenshot">
-          <img src="images/adminajustes.png" alt="Ajustes de administración" class="screenshot">
-          <img src="images/adminañadirproducto.png" alt="Añadir producto desde administración" class="screenshot">
-          <img src="images/admindevoluciones.png" alt="Gestión de devoluciones administración" class="screenshot">
-          <img src="images/adminsoporte.png" alt="Soporte de administración" class="screenshot">
-          <img src="images/adminusers.png" alt="Gestión de usuarios" class="screenshot">
-
-          <img src="images/Registro2.png" alt="Pantalla de registro" class="screenshot">
-
-          <img src="images/login3.png" alt="Pantalla de inicio de sesión" class="screenshot">
-
-          <img src="images/recuperarcontra.png" alt="Pantalla de recuperar contraseña" class="screenshot">
-
-          <img src="images/ajusteslupauser.png" alt="Ajustes y búsqueda de usuario" class="screenshot">
-          <img src="images/detallesproducto.png" alt="Detalles del producto" class="screenshot">
-          <img src="images/productouser.png" alt="Vista de producto para usuario" class="screenshot">
-          <img src="images/listacarritouser.png" alt="Lista del carrito de usuario" class="screenshot">
-          <img src="images/devolucionesuser.png" alt="Devoluciones de usuario" class="screenshot">
-          <img src="images/devolucionesuser 2.png" alt="Devoluciones de usuario vista 2" class="screenshot">
-          <img src="images/soporteuser.png" alt="Soporte de usuario" class="screenshot">
+      <div class="dialog-content">
+        <p class="eyebrow" id="dialog-kicker"></p>
+        <h2 id="project-dialog-title"></h2>
+        <p class="dialog-description" id="dialog-description"></p>
+        <ul
+          class="tags tags-light"
+          id="dialog-tags"
+          aria-label="Tecnologías del proyecto"
+        ></ul>
+        <div class="gallery">
+          <button
+            type="button"
+            class="gallery-main"
+            id="gallery-expand"
+            aria-label="Ampliar captura"
+          >
+            <img id="gallery-image" alt="" width="1440" height="1040" /><span
+              class="gallery-zoom"
+              ><svg class="icon"><use href="#i-zoom" /></svg> Ampliar</span
+            >
+          </button>
+          <div class="gallery-footer">
+            <p id="gallery-caption"></p>
+            <div class="gallery-controls">
+              <button
+                type="button"
+                class="icon-button"
+                id="gallery-prev"
+                aria-label="Captura anterior"
+              >
+                <svg class="icon reversed"><use href="#i-right" /></svg></button
+              ><span class="mono" id="gallery-count" aria-live="polite"></span
+              ><button
+                type="button"
+                class="icon-button"
+                id="gallery-next"
+                aria-label="Siguiente captura"
+              >
+                <svg class="icon"><use href="#i-right" /></svg>
+              </button>
+            </div>
+          </div>
+          <div
+            class="gallery-thumbnails"
+            id="gallery-thumbnails"
+            role="group"
+            aria-label="Seleccionar captura"
+          ></div>
         </div>
-
-        <div class="project-links">
-          <a href="https://github.com/Carlostarvil/yepsy" target="_blank" class="btn-link">🔗 Ver en GitHub</a>
+        <div class="case-study">
+          <div>
+            <h3>Qué permite hacer</h3>
+            <ul id="dialog-features"></ul>
+          </div>
+          <div>
+            <h3>Decisiones técnicas</h3>
+            <p id="dialog-technical"></p>
+          </div>
+        </div>
+        <div class="dialog-actions">
+          <a
+            class="button button-dark"
+            id="dialog-repo"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ver código en GitHub
+            <svg class="icon"><use href="#i-arrow" /></svg></a
+          ><a
+            class="text-link"
+            id="dialog-docs"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Documentación <svg class="icon"><use href="#i-arrow" /></svg
+          ></a>
         </div>
       </div>
-
-      <!-- PROYECTO 2: TICKET BOOKING API PRO (SE MANTIENE EN SEGUNDA POSICIÓN) -->
-      <div class="project-card">
-        <h3>Ticket Booking API Pro</h3>
-        <p>Robusta API RESTful diseñada para la gestión de eventos y venta de entradas en entornos de alta concurrencia. Este proyecto simula el comportamiento del motor central de una plataforma de gran envergadura estilo <strong>Ticketmaster</strong>, implementando las mejores prácticas de la industria backend moderno y un panel de control interactivo para la gestión de datos.</p>
-
-        <h4>Roles y funcionalidades</h4>
-        <ul>
-          <li><strong>Usuario (USER):</strong> Registro público automático, navegación de eventos disponibles y compra segura de entradas con control de protección ante sobreventas.</li>
-          <li><strong>Administrador (ADMIN):</strong> Acceso completo a los endpoints protegidos con privilegios de gestión mediante cuenta semilla o elevación de privilegios en BD.</li>
-          <li><strong>Control de Concurrencia:</strong> Control estricto de transacciones SQL para garantizar que las compras simultáneas en milisegundos no alteren el stock real.</li>
-          <li><strong>Rendimiento Optimizado:</strong> Implementación de caché en memoria y paginación inteligente para manejar consultas masivas de manera eficiente.</li>
-          <li><strong>Procesos Asíncronos:</strong> Envío automatizado de correos electrónicos en segundo plano, maximizando la velocidad de respuesta del servidor.</li>
-          <li><strong>Seguridad y Validación:</strong> Autenticación JWT por roles, protección frente a ataques de Mass Assignment y validación estricta de datos mediante DTOs.</li>
-        </ul>
-
-        <h4>Tecnologías utilizadas</h4>
-        <ul>
-          <li><strong>Java 17 & Spring Boot 3</strong> → Desarrollo del core del backend, lógica de negocio y arquitectura RESTful</li>
-          <li><strong>PostgreSQL</strong> → Base de datos relacional robusta elegida para la persistencia del sistema en producción</li>
-          <li><strong>Spring Security & JWT</strong> → Filtros de seguridad, encriptación BCrypt y gestión de sesiones basadas en tokens</li>
-          <li><strong>Flyway</strong> → Control de versiones y ejecución automatizada de migraciones de la base de datos</li>
-          <li><strong>Docker & Docker Compose</strong> → Virtualización y despliegue unificado de contenedores para BD y API</li>
-          <li><strong>React, Vite & Tailwind CSS v4</strong> → Frontend opcional para interactuar visualmente con la API mediante peticiones Axios</li>
-          <li><strong>JUnit 5, Mockito & MockMvc</strong> → Pruebas automatizadas unitarias y de integración para asegurar la robustez del código</li>
-          <li><strong>Swagger / OpenAPI 3.0</strong> → Documentación interactiva y accesible de todos los endpoints de la API</li>
-          <li><strong>GitHub Actions</strong> → Automatización de flujos de trabajo e Integración Continuas (CI/CD)</li>
-        </ul>
-
-        <h4>Cómo ejecutar el proyecto</h4>
-        <ol>
-          <li><strong>Clonar el repositorio:</strong> <code>git clone https://github.com/carlostarvil/ticketapi.git</code> y acceder al directorio usando <code>cd ticketapi</code>.</li>
-          <li><strong>Empaquetar la aplicación:</strong> Generar el archivo ejecutable compilando el entorno mediante el comando <code>./mvnw clean package -DskipTests</code>.</li>
-          <li><strong>Levantar la infraestructura (Docker):</strong> Iniciar el ecosistema completo ejecutando <code>docker compose up -d --build</code>. Esto descargará la imagen de PostgreSQL, ejecutará las migraciones de Flyway y desplegará la API en el puerto <strong>8081</strong>.</li>
-          <li><strong>Acceder a la documentación:</strong> Una vez levantado el entorno, puedes interactuar de forma interactiva con los endpoints en la URL: <code>http://localhost:8081/swagger-ui/index.html</code>.</li>
-          <li><strong>Configurar privilegios de Administrador:</strong>
-            <ul>
-              <li><strong>Vía Rápida:</strong> Iniciar sesión en Swagger utilizando la cuenta preconfigurada de pruebas (Usuario: <code>admin@ticketstore.com</code> / Contraseña: <code>admin123</code>).</li>
-              <li><strong>Vía Manual (Consola Docker):</strong> Si registras un usuario público y necesitas elevarlo a ADMIN desde tu terminal, accede al contenedor ejecutando:
-                <pre>
--- 1. Acceder a PostgreSQL dentro del contenedor activo:
-docker exec -it &lt;nombre_del_contenedor&gt; psql -U &lt;tu_usuario_de_db&gt; -d &lt;nombre_de_tu_db&gt;
-
--- 2. Modificar el rol del usuario directamente en las tablas:
-UPDATE usuarios SET role = 'ADMIN' WHERE username = 'nuevo.cliente@email.com';
-                </pre>
-              </li>
-            </ul>
-          </li>
-          <li><strong>Ejecutar el Frontend (Opcional):</strong> 
-            <ul>
-              <li>Moverse a la carpeta correspondiente: <code>cd ticketapi-frontend</code></li>
-              <li>Instalar los paquetes de Node: <code>npm install</code></li>
-              <li>Iniciar el entorno de desarrollo: <code>npm run dev</code>. La aplicación estará lista para usarse en <code>http://localhost:5173</code>.</li>
-            </ul>
-          </li>
-        </ol>
-
-        <h4>Capturas de pantalla</h4>
-        <div class="screenshots-vertical">
-          <img src="images/LoginTicket.png" alt="Vista del panel de control interactivo en React" class="screenshot">
-          <img src="images/AdminTicket.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
-          <img src="images/AdminTicket2.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
-          <img src="images/AdminTicket3.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
-          <img src="images/AdminTicket4.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
-          <img src="images/UsuarioTicket.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
-          <img src="images/Ticketmail.png" alt="Documentación interactiva de endpoints en Swagger UI" class="screenshot">
-        </div>
-
-        <div class="project-links">
-          <a href="https://github.com/Carlostarvil/TicketStore" target="_blank" class="btn-link">🔗 Ver en GitHub</a>
-        </div>
+    </dialog>
+    <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-title">
+      <div class="lightbox-toolbar">
+        <p id="lightbox-title"></p>
+        <button
+          class="icon-button"
+          type="button"
+          data-close-lightbox
+          aria-label="Cerrar captura ampliada"
+        >
+          <svg class="icon"><use href="#i-close" /></svg>
+        </button>
       </div>
-
-      <!-- PROYECTO 3: PÁGINA WEB NIKE (REUBICADO A TERCERA POSICIÓN) -->
-      <div class="project-card">
-        <h3>Página Web Nike</h3>
-        <p>Sitio web inspirado en la marca <strong>Nike</strong>, desarrollado como práctica de <strong>frontend</strong> y <strong>backend</strong> completo. Incluye un diseño moderno, secciones interactivas y un <strong>sistema responsivo</strong> que se adapta a diferentes dispositivos. Además, cuenta con funcionalidades de usuario y administrador, carrito de compras y gestión de pedidos.</p>
-
-        <h4>Roles y funcionalidades</h4>
-        <ul>
-          <li><strong>Usuario:</strong> navegar productos, añadir al carrito, proceder a la compra, ver historial de pedidos.</li>
-          <li><strong>Administrador:</strong> añadir, editar y eliminar productos, ver pedidos de todos los usuarios.</li>
-          <li><strong>Autenticación:</strong> registro, login y control de roles con JWT.</li>
-          <li><strong>Carrito:</strong> sincronización entre frontend y backend, actualización de cantidades, eliminación de productos.</li>
-          <li><strong>Pedidos:</strong> creación de órdenes, seguimiento del estado y vaciado del carrito tras la compra.</li>
-          <li><strong>Perfil:</strong> edición de información personal y gestión de pedidos.</li>
-        </ul>
-
-        <h4>Tecnologías utilizadas</h4>
-        <ul>
-          <li><strong>HTML5</strong> → estructura semántica del sitio</li>
-          <li><strong>CSS3</strong> → estilos modernos, responsive design y animaciones</li>
-          <li><strong>JavaScript (ES6+)</strong> → interactividad en el frontend</li>
-          <li><strong>Angular</strong> → desarrollo de componentes reutilizables y SPA</li>
-          <li><strong>Node.js & npm</strong> → entorno de ejecución y gestión de dependencias</li>
-          <li><strong>Express.js</strong> → configuración del backend y API REST</li>
-          <li><strong>MySQL</strong> → gestión de base de datos y almacenamiento de usuarios/productos/pedidos</li>
-          <li><strong>Git & GitHub</strong> → control de versiones y repositorio</li>
-          <li><strong>Cypress</strong> → pruebas end-to-end para verificar funcionalidades</li>
-        </ul>
-
-        <h4>Cómo ejecutar el proyecto</h4>
-        <ol>
-          <li><strong>Clonar el repositorio:</strong> <code>git clone https://github.com/Carlostarre/NikeCypress.git</code></li>
-          <li><strong>Instalar dependencias:</strong>
-            <ul>
-              <li>Frontend (Angular - carpeta <code>pixar-web</code>): <code>npm install</code> y <code>npm install -g @angular/cli</code> si no tienes Angular CLI.</li>
-              <li>Backend (Node.js - carpeta <code>backend</code>): <code>npm install</code></li>
-            </ul>
-          </li>
-          <li><strong>Configurar base de datos MySQL:</strong>
-            <ul>
-              <li>Abrir XAMPP y asegurarse de que MySQL esté iniciado.</li>
-              <li>Crear la base de datos: <code>CREATE DATABASE nike_store;</code></li>
-              <li>Crear las tablas correspondientes ejecutando el script SQL incluido en el proyecto:</li>
-              <pre>
-USE nike_store;
-
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL,
-    isAdmin BOOLEAN DEFAULT 0,
-    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
-CREATE TABLE products (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    description TEXT,
-    price DECIMAL(10,2) NOT NULL,
-    stock INT DEFAULT 0,
-    image VARCHAR(255),
-    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
-CREATE TABLE cart (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    userId INT NOT NULL,
-    productId INT NOT NULL,
-    quantity INT DEFAULT 1,
-    FOREIGN KEY (userId) REFERENCES users(id) ON DELETE CASCADE,
-    FOREIGN KEY (productId) REFERENCES products(id) ON DELETE CASCADE
-);
-              </pre>
-            </ul>
-          </li>
-          <li><strong>Iniciar backend:</strong> <code>npm start</code> en la carpeta <code>backend</code>. Servidor disponible en <code>http://localhost:3000</code>.</li>
-          <li><strong>Iniciar frontend:</strong> <code>ng serve</code> en la carpeta <code>pixar-web</code>. Abrir <code>http://localhost:4200</code> en el navegador.</li>
-          <li><strong>Configurar usuario administrador:</strong>
-            <ul>
-              <li>Crear un usuario desde la web.</li>
-              <li>Modificarlo a administrador en la base de datos: <code>UPDATE users SET isAdmin = 1 WHERE email = 'tu-email@example.com';</code></li>
-            </ul>
-          </li>
-        </ol>
-
-        <h4>Capturas de pantalla</h4>
-        <div class="screenshots-vertical">
-          <img src="images/Inicio.jpg" alt="Pantalla de inicio" class="screenshot">
-          <img src="images/carrito.png" alt="Vista del carrito" class="screenshot">
-          <img src="images/panel admin.png" alt="Panel admin" class="screenshot">
-        </div>
-
-        <div class="project-links">
-          <a href="https://github.com/Carlostarre/Nike" target="_blank" class="btn-link">🔗 Ver en GitHub</a>
-        </div>
-      </div>
-
-      <!-- PROYECTO 4: FIREPLAYGAMES (REUBICADO A CUARTA POSICIÓN) -->
-      <div class="project-card">
-        <h3>FireplayGames</h3>
-        <p>Plataforma web de <strong>exploración y gestión de videojuegos</strong> con autenticación, favoritos, carrito de juegos y datos del usuario integrados. Presenta un diseño moderno, dinámico y totalmente adaptado a dispositivos móviles, consumiendo datos en tiempo real mediante integraciones externas.</p>
-
-        <h4>Roles y funcionalidades</h4>
-        <ul>
-          <li><strong>Autenticación:</strong> Registro seguro e inicio de sesión de usuarios gestionado de forma nativa con Firebase Auth.</li>
-          <li><strong>Catálogo Dinámico:</strong> Búsqueda avanzada de títulos por nombre, género, plataforma o fechas utilizando la API externa de RAWG.</li>
-          <li><strong>Interactividad completa:</strong> Gestión fluida del almacenamiento de videojuegos favoritos y el carrito de compras dentro de colecciones de base de datos.</li>
-          <li><strong>Perfil de Usuario:</strong> Panel privado para editar la información personal del cliente y visualizar su historial guardado de favoritos.</li>
-        </ul>
-
-        <h4>Tecnologías utilizadas</h4>
-        <ul>
-          <li><strong>Next.js</strong> → Framework de React utilizado para implementar rutas dinámicas y renderizado óptimo</li>
-          <li><strong>React & TypeScript</strong> → Creación de la interfaz mediante componentes reutilizables con tipado estático seguro</li>
-          <li><strong>Firebase & Firestore</strong> → Ecosistema cloud empleado para la autenticación y base de datos NoSQL en tiempo real</li>
-          <li><strong>RAWG API</strong> → Integración de servicios externos para la extracción masiva de datos y capturas de videojuegos</li>
-          <li><strong>Tailwind CSS</strong> → Framework de estilos utilizado para agilizar un diseño responsivo y moderno</li>
-          <li><strong>Git & GitHub</strong> → Herramientas aplicadas para el control de versiones distribuidas del código fuente</li>
-        </ul>
-
-        <h4>Cómo ejecutar el proyecto</h4>
-        <ol>
-          <li><strong>Clonar el repositorio:</strong> <code>git clone https://github.com/Carlostarre/FirebaseGames1.git</code></li>
-          <li><strong>Instalar dependencias:</strong> Inicializar los paquetes necesarios ejecutando <code>npm install</code> in tu consola.</li>
-          <li><strong>Variables de entorno:</strong> Crear un archivo local <code>.env.local</code> con tus credenciales privadas de Firebase y RAWG API.</li>
-          <li><strong>Iniciar servidor local:</strong> Ejecutar el comando de desarrollo <code>npm run dev</code> para levantar la app en <code>http://localhost:3000</code>.</li>
-        </ol>
-
-        <h4>Capturas de pantalla</h4>
-        <div class="screenshots-vertical">
-          <img src="images/juegos.png" alt="Listado de juegos" class="screenshot">
-          <img src="images/detallesjuego.png" alt="Detalles de un juego" class="screenshot">
-          <img src="images/favoritos.png" alt="Favoritos" class="screenshot">
-        </div>
-
-        <div class="project-links">
-          <a href="https://github.com/Carlostarre/FirebaseGames1" target="_blank" class="btn-link">🔗 Ver en GitHub</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Habilidades</h2>
-    <div class="skills-container">
-      <div class="skill-card">
-        <h3>HTML, CSS, JavaScript</h3>
-        <p>Desarrollo de interfaces web modernas, responsivas y accesibles con semántica estricta.</p>
-      </div>
-      <div class="skill-card">
-        <h3>React & Tailwind CSS</h3>
-        <p>Implementación de Single Page Applications (SPA) reactivas, control de estados dinámicos y consumo asíncrono con Axios.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Java & Spring Boot 3</h3>
-        <p>Desarrollo de APIs RESTful robustas, control de concurrencia transaccional, optimización con caché y procesos asíncronos.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Spring Security & JWT</h3>
-        <p>Configuración de arquitecturas seguras, control de accesos basados en roles, filtros de tokens y encriptación con BCrypt.</p>
-      </div>
-      <div class="skill-card">
-        <h3>PostgreSQL, MySQL y Flyway</h3>
-        <p>Modelado de bases de datos relacionales eficientes, consultas SQL complejas y automatización de migraciones de esquemas.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Docker & CI/CD</h3>
-        <p>Contenerización de aplicaciones multicapa con Docker Compose y automatización de pipelines con GitHub Actions.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Testing Automatizado</h3>
-        <p>Garantía de calidad de código mediante pruebas unitarias y de integración utilizando JUnit 5, Mockito y Cypress (E2E).</p>
-      </div>
-      <div class="skill-card">
-        <h3>Python</h3>
-        <p>Desarrollo de scripts, automatización de procesos y arquitecturas lógicas backend eficientes.</p>
-      </div>
-      <div class="skill-card">
-        <h3>PHP y Git</h3>
-        <p>Lógica del lado del servidor y control de versiones distribuido orientado a flujos de trabajo colaborativos.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contacto y links</h2>
-    <div class="contact-info">
-      <div class="contact-item">
-        <span class="contact-label">Teléfono:</span>
-        <span class="contact-value">+34 608 07 65 02</span>
-      </div>
-      <div class="contact-item">
-        <span class="contact-label">Email:</span>
-        <span class="contact-value">carlostarrevillanueva0@gmail.com</span>
-      </div>
-      <div class="contact-item">
-        <span class="contact-label">GitHub:</span>
-        <span class="contact-value">
-          <a href="https://github.com/Carlostarvil" target="_blank">Carlostarvil</a> | 
-          <a href="https://github.com/Carlostarre" target="_blank">Carlostarre</a>
-        </span>
-      </div>
-      <div class="contact-item">
-        <span class="contact-label">LinkedIn:</span>
-        <span class="contact-value">
-          <a href="https://www.linkedin.com/in/carlostarre" target="_blank">Carlos Tarré</a>
-        </span>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Carlos Tarré Villanueva. Todos los derechos reservados.</p>
-  </footer>
-
-</body>
+      <img id="lightbox-image" alt="" width="1440" height="1040" />
+    </dialog>
+  </body>
 </html>
